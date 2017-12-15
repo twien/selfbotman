@@ -1176,7 +1176,7 @@ def bot(op):
                 else:md+="❎ Auto add → off \n"
                 if wait["likeOn"] == True: md+="✔ Auto like → on \n"
                 else:md+="❎ Auto like → off \n"
-                cl.sendText(msg.to,"Selfbot-MAN ⛿ ᵀᴴᴬᴵᴸᴬᴺᴰ️ \n [C̶̲̅ᴏ̶̲̅ᴍ̶̲̅ᴍ̶̲̅ᴀ̶̲̅ɴ̶̲̅ᴅ̶̲̅] ☛ S E T T I N G ☚\n"۫\n"+md)
+                cl.sendText(msg.to,"Selfbot-MAN ⛿ ᵀᴴᴬᴵᴸᴬᴺᴰ️ \n [C̶̲̅ᴏ̶̲̅ᴍ̶̲̅ᴍ̶̲̅ᴀ̶̲̅ɴ̶̲̅ᴅ̶̲̅] ☛ S E T T I N G ☚\n"+md)
             elif msg.text in ["Group id","group id"]:
                 gid = cl.getGroupIdsJoined()
                 g = ""
@@ -1904,9 +1904,10 @@ def bot(op):
                 msg.contentType = 13
                 msg.contentMetadata = {'mid': gCreator}
                 cl.sendMessage(msg)
-                cl.sendText(msg.to,"""╔══════════════
-║ผู้สร้างกลุ่ม Creator Group
-╚══════════════""")
+                cl.sendText(msg.to,"""╔══════════════════
+║ [Creator Group] ผู้สร้างกลุ่ม
+║By..⛿$ëlf☠️฿❂Ŧ☠️️ℳѦれ..✍️
+╚══════════════════""")
 #-----------------------------------------------
             elif "Nk " in msg.text:
                        nk0 = msg.text.replace("Nk ","")
@@ -1946,7 +1947,7 @@ def bot(op):
                 thisgroup = cl.getGroups([msg.to])
                 Mids = [contact.mid for contact in thisgroup[0].members]
                 mi_d = Mids[:33]
-                cl.createGro, mi_d)
+                cl.createGroup("⛿Selfbot-MAN", mi_d)
                 cl.sendText(msg.to,"Cover Group")
 #-----------------------------------------------
             elif "Spam " in msg.text:
