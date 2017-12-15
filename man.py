@@ -96,7 +96,7 @@ helpMessage =""" Mr. Bots…⛿
 ╠❂➣[Say: ]  •บอทพูดตาม / Say: MAN
 ╠❂➣[Cancel]:[Cl]  •ยกเลิก ค้างเชิญ'
 ╠❂➣[Gn:"………...": •เปลี่ยนชื่อกลุ่ม
-╠❂➣[NK @tag]: เตะ @แท๊กระบุ
+╠❂➣[Kick @]: เตะ @แท๊กระบุ
 ╠❂➣[Copy]  •Copy to "Chat" 
 ╠❂➣[Copy @]  •Copy to Group
 ╠❂➣[Save]. •บันทึกสำเนา
@@ -110,42 +110,42 @@ helpMessage =""" Mr. Bots…⛿
 ╠══════════════════════
 ║ [C̶̲̅ᴏ̶̲̅ᴍ̶̲̅ᴍ̶̲̅ᴀ̶̲̅ɴ̶̲̅ᴅ̶̲̅] ☛ S E T T I N G ☚
 ╠══════════════════════
-╠❂➣[Contact:      『on/off』
-╠❂➣[Auto join:    『on/off』
+╠❂➣[Contact:        『on/off』
+╠❂➣[Auto join:      『on/off』
 ╠❂➣[Cancel Invite: 1 on/off
 ╠❂➣[Auto share:   『on/off』
 ╠❂➣[Auto leave:   『on/off』
 ╠❂➣[Comment:      『on/off』
-╠❂➣[Auto add:     『on/off』
-╠❂➣[Auto like:    『on/off』
+╠❂➣[Auto add:       『on/off』
+╠❂➣[Auto like:      『on/off』
 ╠═════════════════════
 ║[C̶̲̅ᴏ̶̲̅ᴍ̶̲̅ᴍ̶̲̅ᴀ̶̲̅ɴ̶̲̅ᴅ̶̲̅] ☛ κɪcκєʀ☠️Bot ᴸᶤᶰᵉ
 ╠═════════════════════
 ╠❂➣[Spam virus @]บอทปล่อยไวรัส
+╠❂➣[Delete chat] •ล้างแชทบอท
 ╠❂➣[Mybot] •Send contact BOT
 ╠❂➣[Sendcontact]•ContactBOT&ME
 ╠❂➣[Name Bot: ]  •Name the bot
 ╠❂➣[All mid]  •MID Bot kicker
 ╠❂➣[Me @] •Send contact @tag
-╠❂➣[Kicker}  • บอทเข้ากลุ่ม………
-╠❂➣[Bye]   • บอทออก…………… 
-╠❂➣[ผีเข้า]+[ผีออก]…………………
-╠❂➣[คิกผี]…………………………………………
-╠❂➣[ผียกเชิญ]…………………………………………
+╠❂➣ [Kicker] •บอทเข้ากลุ่ม ......
+╠❂➣ [Bye] •บอทออก ..............
+╠❂➣ [ผีเข้า] + [ผีออก] .............
+╠❂➣ [คิกผี] ..........................
+╠❂➣ [ผียกเชิญ] .....................
 ╠❂➣[??¿ @] •บอทผี เข้าเตะ แล้วออก
 ╠❂➣[K1/K2..K gn: ]•Up name group
 ╠❂➣[K1/K2..K12 in] •Bot Join group
 ╠❂➣[K1/K2..K12 fuck:]  •Bot  KICKER
 ╠❂➣[K1/K2..K5 gift] •Bot send a gift
 ╠❂➣[Gift all]  •All bots  send gifts.
-╠❂➣[Test][Deag][Nk ][Kick @][Fuck @]
-╠K1K2K3-K4-K5-K6-K7-K8-K9-K10-K11-K12
+╠❂➣[Kick @][Fuck @][Error!][??¿ @]
 ╠══════════════════════
 ║  •✯͜͡✍️$ëlf☠️฿❂T☠️ℳѦれ☆۰۪۫
 ╠══════════════════════
 ╠line.me/ti/p/~1ove..neverdie
 ╚══════════════════════
-Message Protect [Help2]
+   Message Protect [Help2]
 """
 helpMessage2 ="""Mr. Bots…⛿
  ╔══╦═╦═╗
@@ -1164,8 +1164,8 @@ def bot(op):
                 else: md+="❎ Contact → off \n"
                 if wait["autoJoin"] == True: md+="✔  Auto join → on \n"
                 else: md +="❎ Auto join → off \n"
-                if wait["autoCancel"]["on"] == True:md+="✔ Cancel Invite → " + str(wait["autoCancel"]["members"]) + " \n"     
-                else: md+= "❎ Cancel Invite → off \n"
+                if wait["autoCancel"]["on"] == True:md+="✔ Cancel Invite → " + str(wait["autoCancel"]["members"]) + " \n"
+                else: md+="❎ Cancel Invite → off \n"
                 if wait["leaveRoom"] == True: md+="✔ Auto leave → on \n"
                 else: md+="❎ Auto leave → off \n"
                 if wait["timeline"] == True: md+="✔ Auto Share → on \n"
@@ -1176,7 +1176,7 @@ def bot(op):
                 else:md+="❎ Auto add → off \n"
                 if wait["likeOn"] == True: md+="✔ Auto like → on \n"
                 else:md+="❎ Auto like → off \n"
-                cl.sendText(msg.to,"Selfbot-MAN ⛿ ᵀᴴᴬᴵᴸᴬᴺᴰ️ \n [C̶̲̅ᴏ̶̲̅ᴍ̶̲̅ᴍ̶̲̅ᴀ̶̲̅ɴ̶̲̅ᴅ̶̲̅] ☛ S E T T I N G ☚\n"+md)
+                cl.sendText(msg.to,"Selfbot-MAN ⛿ ᵀᴴᴬᴵᴸᴬᴺᴰ️ \n [C̶̲̅ᴏ̶̲̅ᴍ̶̲̅ᴍ̶̲̅ᴀ̶̲̅ɴ̶̲̅ᴅ̶̲̅]  ☛ S E T ☚\n\n"+md)
             elif msg.text in ["Group id","group id"]:
                 gid = cl.getGroupIdsJoined()
                 g = ""
@@ -1877,9 +1877,9 @@ def bot(op):
                                 wait["blacklist"] = {}
                                 cl.sendText(msg.to,"clear")
 #-----------------------------------------------
-            elif "Contact @" in msg.text:
+            elif "You @" in msg.text:
                 msg.contentType = 13
-                _name = msg.text.replace("Contact @","")
+                _name = msg.text.replace("You @","")
                 _nametarget = _name.rstrip(' ')
                 gs = cl.getGroup(msg.to)
                 for g in gs.members:
@@ -2476,7 +2476,7 @@ def bot(op):
                     pass
                     
         if op.type == 32:
-                         OWN = "ud24af63fd62d14c3bf8f719df80c3745","u84eaf58cd49bff840407abe3fc4db59c","ud186e0db54125e86130c8219a739e8a1","ub5511376daa821f14e7097bc2d7e90aa","u2b8cc0e7eb9e1acdd76ac52cbd304de3","u4be0d0fa6d209732889a5c86df184b0a","u1642bb26466ae4c647d723692030b418","u81e8c0945d7c86244b31e8f70e45d6e2","uaffb56a754f810d1ca7c49658503744b","ua6153d8c9daa16d799a19716ed0e50f8","ub2d390fda0c7ec03373009a97debe6f9","u69e29260fae1bae30db65dc8c24c0f16","ud55447120723d599b2bce2d67b14eb08" 
+                        OWN = "ud24af63fd62d14c3bf8f719df80c3745","u84eaf58cd49bff840407abe3fc4db59c","ud186e0db54125e86130c8219a739e8a1","ub5511376daa821f14e7097bc2d7e90aa","u2b8cc0e7eb9e1acdd76ac52cbd304de3","u4be0d0fa6d209732889a5c86df184b0a","u1642bb26466ae4c647d723692030b418","u81e8c0945d7c86244b31e8f70e45d6e2","uaffb56a754f810d1ca7c49658503744b","ua6153d8c9daa16d799a19716ed0e50f8","ub2d390fda0c7ec03373009a97debe6f9","u69e29260fae1bae30db65dc8c24c0f16","ud55447120723d599b2bce2d67b14eb08" 
 			if op.param2 in OWN:
 				pass
 			else:
