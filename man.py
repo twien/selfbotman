@@ -372,16 +372,16 @@ def bot(op):
         if op.type == 15:
             if op.param2 in bot1:
                 return
-            cl.sendText(op.param1,"👋😂 Ɓy℮ Bye ☛[" + cl.getContact(op.param2).displayName + "]☚ ")
+            cl.sendText(op.param1,"👋😂 Ɓy℮ Bye ☛[" + cl.getContact(op.param2).displayName + "]☚ " + datetime.today().strftime('%H:%M:%S') )
             print ("MEMBER HAS LEFT THE GROUP")
 
         if op.type == 19:
             if op.param2 in bot1:
                 return
-            cl.sendText(op.param1,cl.getContact(op.param2).displayName + " ☚ 👣ซัดเต็มข้อเลยครับ ท่านผู้ชม👣")
+            cl.sendText(op.param1,cl.getContact(op.param2).displayName + " ☚ 👣ซัดเต็มข้อเลยครับ ท่านผู้ชม👣" + datetime.today().strftime('%H:%M:%S') )
             print "MEMBER KICK OUT FORM GROUP"
 
-        if op.type == 17:
+        if op.type == 17:in
             if mid in op.param3:
                     group = cl.getGroup(msg.to)
                     gMembMids = [contact.mid for contact in group.members]
@@ -1151,7 +1151,7 @@ def bot(op):
                             u = "「Close」"
                         else:
                             u = "「Open」"
-                        cl.sendText(msg.to,"[ชื่อกลุ่ม]\n" + str(ginfo.name) + "\n\n[ไอดีกลุ่ม]\n" + msg.to + "\n\n[ผู้สร้างกลุ่ม]\n" + gCreator + "\n\n[รูปโปรไฟล์กลุ่ม]\nhttp://dl.profile.line.naver.jp/" + ginfo.pictureStatus + "\n\nจำนวนสมาชิกกลุ่ม「" + str(len(ginfo.members)) + "」ท่าน\nจำนวนสมาชิกค้างเชิญ「" + sinvitee + "」ท่าน\nURL group : " + u + "⛿$ëlf☠️฿❂Ŧ☠️️ℳѦれ..✍️")
+                        cl.sendText(msg.to,"[ชื่อกลุ่ม]\n" + str(ginfo.name) + "\n\n[ไอดีกลุ่ม]\n" + msg.to + "\n\n[ผู้สร้างกลุ่ม]\n" + gCreator + "\n\n[รูปโปรไฟล์กลุ่ม]\nhttp://dl.profile.line.naver.jp/" + ginfo.pictureStatus + "\n\nจำนวนสมาชิกกลุ่ม「" + str(len(ginfo.members)) + "」ท่าน\nจำนวนสมาชิกค้างเชิญ「" + sinvitee + "」ท่าน\nURL group:" + u + " By.. ⛿$ëlf☠️฿❂Ŧ☠️️ℳѦれ..✍️"+ datetime.today().strftime('%H:%M:%S'))
                     else:
                         cl.sendText(msg.to,"[名字]\n" + str(ginfo.name) + "\n[gid]\n" + msg.to + "\n[小组的作成者]\n" + gCreator + "\n[小组图标]\nhttp://dl.profile.line.naver.jp/" + ginfo.pictureStatus)
                 else:
@@ -1211,8 +1211,8 @@ def bot(op):
                     profile.displayName = string
                     cl.updateProfile(profile)
                     cl.sendText(msg.to,"The name " + string + " I did NI change。")
-            elif "Namebot:" in msg.text:
-                string = msg.text.replace("Namebot:","")
+            elif ["Namebot:","ตั้งชื่อบอท:"] in msg.text:
+                string = msg.text.replace("Namebot:","ตั้งชื่อบอท:")
                 if len(string.decode('utf-8')) <= 20:
                     profile = cl.getProfile()
                     profile.displayName = string
@@ -1230,46 +1230,46 @@ def bot(op):
                     kj.updateProfile(profile)
                     cl.sendText(msg.to,"The name " + string + " I did NI change。")
 #---------------------------------------------------------
-            elif "K1 upname:" in msg.text:
-                string = msg.text.replace("K1 up name:","")
+            elif ["M1 up name:","บอทผีตั้งชื่อ:"] in msg.text:
+                string = msg.text.replace("M1 up name:","บอทผีตั้งชื่อ:")
                 if len(string.decode('utf-8')) <= 20:
                     profile = ki.getProfile()
                     profile.displayName = string
                     ki.updateProfile(profile)
                     ki.sendText(msg.to,"The name " + string + " I did NI change。")
 #--------------------------------------------------------
-            elif "K2 upname:" in msg.text:
-                string = msg.text.replace("K2 up name:","")
+            elif "M2 up name:" in msg.text:
+                string = msg.text.replace("M2 up name:","")
                 if len(string.decode('utf-8')) <= 20:
                     profile = kk.getProfile()
                     profile.displayName = string
                     kk.updateProfile(profile)
                     kk.sendText(msg.to,"The name " + string + " I did NI change。")
 #--------------------------------------------------------
-            elif "K3 upname:" in msg.text:
-                string = msg.text.replace("K3 up name:","")
+            elif "M3 up name:" in msg.text:
+                string = msg.text.replace("M3 up name:","")
                 if len(string.decode('utf-8')) <= 20:
                     profile = ks.getProfile()
                     profile.displayName = string
                     ks.updateProfile(profile)
                     ks.sendText(msg.to,"The name " + string + " I did NI change。")
 #--------------------------------------------------------
-            elif "K1 upstatus: " in msg.text:
-                string = msg.text.replace("K1 upstatus: ","")
+            elif "M1 upstatus: " in msg.text:
+                string = msg.text.replace("M1 upstatus: ","")
                 if len(string.decode('utf-8')) <= 500:
                     profile_B = ki.getProfile()
                     profile_B.statusMessage = string
                     ki.updateProfile(profile_B)
                     ki.sendText(msg.to,"display message " + string + " done")
-            elif "K2 upstatus: " in msg.text:
-                string = msg.text.replace("K2 upstatus: ","")
+            elif "M2 upstatus: " in msg.text:
+                string = msg.text.replace("M2 upstatus: ","")
                 if len(string.decode('utf-8')) <= 500:
                     profile_C = kk.getProfile()
                     profile_C.statusMessage = string
                     kk.updateProfile(profile_C)
                     kk.sendText(msg.to,"display message " + string + " done")
-            elif "K3 upstatus: " in msg.text:
-                string = msg.text.replace("K3 upstatus: ","")
+            elif "M3 upstatus: " in msg.text:
+                string = msg.text.replace("M3 upstatus: ","")
                 if len(string.decode('utf-8')) <= 500:
                     profile_C = ks.getProfile()
                     profile_C.statusMessage = string
