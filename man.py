@@ -372,13 +372,13 @@ def bot(op):
         if op.type == 15:
             if op.param2 in bot1:
                 return
-            cl.sendText(op.param1,"👋😂 Ɓy℮ Bye ☛" + cl.getContact(op.param2).displayName + "☚ ")
+            cl.sendText(op.param1,"👋😂 Ɓy℮ Bye ☛[" + cl.getContact(op.param2).displayName + "]☚ ")
             print ("MEMBER HAS LEFT THE GROUP")
 
         if op.type == 19:
             if op.param2 in bot1:
                 return
-            cl.sendText(op.param1,cl.getContact(op.param2).displayName + " ☚ ซัดเต็มข้อเลยครับ ท่านผู้ชม")
+            cl.sendText(op.param1,cl.getContact(op.param2).displayName + " ☚ 👣ซัดเต็มข้อเลยครับ ท่านผู้ชม👣")
             print "MEMBER KICK OUT FORM GROUP"
 
         if op.type == 17:
@@ -833,17 +833,17 @@ def bot(op):
                     cl.sendText(msg.to,helpMessage2)
                 else:
                     cl.sendText(msg.to,helpt)
-            elif ("Gn:"in msg.text):
+            elif ("Gn:","ตั้งชื่อกลุ่ม:"in msg.text):
                 if msg.toType == 2:
                     X = cl.getGroup(msg.to)
-                    X.name = msg.text.replace("Gn:","")
+                    X.name = msg.text.replace("Gn:","ตั้งชื่อกลุ่ม:")
                     cl.updateGroup(X)
                 else:
                     cl.sendText(msg.to,"It can't be used besides the group.")
-            elif ("ki1 gn " in msg.text):
+            elif ("M1 gn:","Bot gn:" in msg.text):
                 if msg.toType == 2:
                     X = cl.getGroup(msg.to)
-                    X.name = msg.text.replace("ki1 gn ","")
+                    X.name = msg.text.replace("M1 gn:","Bot gn:")
                     ki.updateGroup(X)
                 else:
                     ki.sendText(msg.to,"It can't be used besides the group.")
@@ -854,41 +854,73 @@ def bot(op):
                     ki2.updateGroup(X)
                 else:
                     ki2.sendText(msg.to,"It can't be used besides the group.")
-            elif "เตะ:" in msg.text:
-                midd = msg.text.replace("kick:","")
+            elif ["Kick:","เตะ:"] in msg.text:
+                midd = msg.text.replace("Kick:","เตะ:")
                 cl.kickoutFromGroup(msg.to,[midd])
-            elif "เชิญ:" in msg.text:
-                midd = msg.text.replace("Invite:","")
+            elif ["Invite:","เชิญ:"] in msg.text:
+                midd = msg.text.replace("Invite:","เชิญ:")
                 cl.findAndAddContactsByMid(midd)
                 cl.inviteIntoGroup(msg.to,[midd])
-            elif "ผีเชิญ:" in msg.text:
-                midd = msg.text.replace("K1 invite:","")
+            elif ["M1 invite:","ผีเชิญ:"] in msg.text:
+                midd = msg.text.replace("M1 invite:","ผีเชิญ:")
                 ki.findAndAddContactsByMid(midd)
                 ki.inviteIntoGroup(msg.to,[midd])
             elif "Me" == msg.text:
                 msg.contentType = 13
                 msg.contentMetadata = {'mid': mid}
                 cl.sendMessage(msg)
-            elif "K1" == msg.text:
+            elif "Man" == msg.text:
+                msg.contentType = 13
+                msg.contentMetadata = {'mid': mid}
+                cl.sendMessage(msg)
+            elif "M1" == msg.text:
                 msg.contentType = 13
                 msg.contentMetadata = {'mid': Amid}
                 ki.sendMessage(msg)
-            elif "K2" == msg.text:
+            elif "M2" == msg.text:
                 msg.contentType = 13
                 msg.contentMetadata = {'mid': kimid}
                 kk.sendMessage(msg)
-            elif "K3" == msg.text:
+            elif "M3" == msg.text:
                 msg.contentType = 13
                 msg.contentMetadata = {'mid': ki2mid}
                 ks.sendMessage(msg)    
-            elif "K4" == msg.text:
+            elif "M4" == msg.text:
                 msg.contentType = 13
                 msg.contentMetadata = {'mid': Cmid}
                 kc.sendMessage(msg)
-            elif "K5" == msg.text:
+            elif "M5" == msg.text:
                 msg.contentType = 13
                 msg.contentMetadata = {'mid': Emid}
                 ka.sendMessage(msg)
+            elif "M6" == msg.text:
+                msg.contentType = 13
+                msg.contentMetadata = {'mid': Fmid}
+                km.sendMessage(msg)
+            elif "M7" == msg.text:
+                msg.contentType = 13
+                msg.contentMetadata = {'mid': Gmid}
+                kn.sendMessage(msg)
+            elif "M8" == msg.text:
+                msg.contentType = 13
+                msg.contentMetadata = {'mid': Hmid}
+                ko.sendMessage(msg)
+            elif "M9" == msg.text:
+                msg.contentType = 13
+                msg.contentMetadata = {'mid': Imid}
+                kp.sendMessage(msg)    
+            elif "M10" == msg.text:
+                msg.contentType = 13
+                msg.contentMetadata = {'mid': Jmid}
+                kq.sendMessage(msg)
+            elif "M11" == msg.text:
+                msg.contentType = 13
+                msg.contentMetadata = {'mid': Kmid}
+                kr.sendMessage(msg)
+            elif "M12" == msg.text:
+                msg.contentType = 13
+                msg.contentMetadata = {'mid': Lmid}
+                kj.sendMessage(msg)
             elif "Mybot" == msg.text:
                 msg.contentType = 13
                 msg.contentMetadata = {'mid': Amid}
