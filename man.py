@@ -372,7 +372,7 @@ def bot(op):
         if op.type == 15:
             if op.param2 in bot1:
                 return
-            cl.sendText(op.param1,"Ɓy℮ Bye ☛" + cl.getContact(op.param2).displayName + "☚ 〆(・∀・＠)")
+            cl.sendText(op.param1,"👋😂 Ɓy℮ Bye ☛" + cl.getContact(op.param2).displayName + "☚ ")
             print ("MEMBER HAS LEFT THE GROUP")
 
         if op.type == 19:
@@ -472,6 +472,16 @@ def bot(op):
 					ki.kickoutFromGroup(op.param1,[op.param2])
 					kk.kickoutFromGroup(op.param1,[op.param2])
 					ks.kickoutFromGroup(op.param1,[op.param2])
+                                        kc.kickoutFromGroup(op.param1,[op.param2])
+					ka.kickoutFromGroup(op.param1,[op.param2])
+					km.kickoutFromGroup(op.param1,[op.param2])
+					kn.kickoutFromGroup(op.param1,[op.param2])
+                                        ko.kickoutFromGroup(op.param1,[op.param2])
+					kp.kickoutFromGroup(op.param1,[op.param2])
+                                        kq.kickoutFromGroup(op.param1,[op.param2])
+                                        kr.kickoutFromGroup(op.param1,[op.param2])
+					kj.kickoutFromGroup(op.param1,[op.param2])
+                                        
 		if op.type == 32:
 			if mid in op.param3:
 				wait["blacklist"][op.param2] == True
@@ -482,7 +492,16 @@ def bot(op):
 					ki.kickoutFromGroup(op.param1,[op.param2])
 					kk.kickoutFromGroup(op.param1,[op.param2])
 					ks.kickoutFromGroup(op.param1,[op.param2])
-		if op.type == 25:
+                                        kc.kickoutFromGroup(op.param1,[op.param2])
+					ka.kickoutFromGroup(op.param1,[op.param2])
+					km.kickoutFromGroup(op.param1,[op.param2])
+					kn.kickoutFromGroup(op.param1,[op.param2])
+                                        ko.kickoutFromGroup(op.param1,[op.param2])
+					kp.kickoutFromGroup(op.param1,[op.param2])
+                                        kq.kickoutFromGroup(op.param1,[op.param2])
+                                        kr.kickoutFromGroup(op.param1,[op.param2])
+					kj.kickoutFromGroup(op.param1,[op.param2])
+                if op.type == 25:
 			if mid in op.param3:
 				wait["blacklist"][op.param2] == True
 		if op.type == 25:
@@ -492,6 +511,15 @@ def bot(op):
 					ki.kickoutFromGroup(op.param1,[op.param2])
 					kk.kickoutFromGroup(op.param1,[op.param2])
 					ks.kickoutFromGroup(op.param1,[op.param2])
+                                        kc.kickoutFromGroup(op.param1,[op.param2])
+					ka.kickoutFromGroup(op.param1,[op.param2])
+					km.kickoutFromGroup(op.param1,[op.param2])
+					kn.kickoutFromGroup(op.param1,[op.param2])
+                                        ko.kickoutFromGroup(op.param1,[op.param2])
+					kp.kickoutFromGroup(op.param1,[op.param2])
+                                        kq.kickoutFromGroup(op.param1,[op.param2])
+                                        kr.kickoutFromGroup(op.param1,[op.param2])
+					kj.kickoutFromGroup(op.param1,[op.param2])
         if op.type == 22:
             if wait["leaveRoom"] == True:
                 cl.leaveRoom(op.param1)
@@ -508,6 +536,15 @@ def bot(op):
 					ki.kickoutFromGroup(op.param1,[op.param2])
 					kk.kickoutFromGroup(op.param1,[op.param2])
 					ks.kickoutFromGroup(op.param1,[op.param2])
+                                        kc.kickoutFromGroup(op.param1,[op.param2])
+					ka.kickoutFromGroup(op.param1,[op.param2])
+					km.kickoutFromGroup(op.param1,[op.param2])
+					kn.kickoutFromGroup(op.param1,[op.param2])
+                                        ko.kickoutFromGroup(op.param1,[op.param2])
+					kp.kickoutFromGroup(op.param1,[op.param2])
+                                        kq.kickoutFromGroup(op.param1,[op.param2])
+                                        kr.kickoutFromGroup(op.param1,[op.param2])
+					kj.kickoutFromGroup(op.param1,[op.param2])
 					wait["blacklist"][op.param2] = True
 					f=codecs.open('st2__b.json','w','utf-8')
 					json.dump(wait["blacklist"], f, sort_keys=True, indent=4,ensure_ascii=False)
@@ -524,16 +561,43 @@ def bot(op):
                             cl.acceptGroupInvitationByTicket(list_[1],list_[2])
                             ki.acceptGroupInvitationByTicket(list_[1],list_[2])
                             kk.acceptGroupInvitationByTicket(list_[1],list_[2])
-                            ks.acceptGroupInvita		
+                            ks.acceptGroupInvitationByTicket(list_[1],list_[2])
+                            kc.acceptGroupInvitationByTicket(list_[1],list_[2])
+                            ka.acceptGroupInvitationByTicket(list_[1],list_[2])
+                            km.acceptGroupInvitationByTicket(list_[1],list_[2])
+                            kn.acceptGroupInvitationByTicket(list_[1],list_[2])
+                            ko.acceptGroupInvitationByTicket(list_[1],list_[2])
+                            kp.acceptGroupInvitationByTicket(list_[1],list_[2])
+                            kq.acceptGroupInvitationByTicket(list_[1],list_[2])
+                            kr.acceptGroupInvitationByTicket(list_[1],list_[2])
+                            kj.acceptGroupInvitationByTicket(list_[1],list_[2])
                             X = cl.getGroup(list_[1])
                             X = ki.getGroup(list_[1])
                             X = kk.getGroup(list_[1])
-                            X = ks.getGroup(list_[1])							
+                            X = ks.getGroup(list_[1])
+                            X = kc.getGroup(list_[1])
+                            X = ka.getGroup(list_[1])
+                            X = km.getGroup(list_[1])
+                            X = kn.getGroup(list_[1])
+                            X = ko.getGroup(list_[1])
+                            X = kp.getGroup(list_[1])
+                            X = kq.getGroup(list_[1])
+                            X = kr.getGroup(list_[1])
+                            X = kj.getGroup(list_[1])
                             X.preventJoinByTicket = True
                             cl.updateGroup(X)
                             ki.updateGroup(X)
                             kk.updateGroup(X)
-                            ks.updateGroup(X)							
+                            ks.updateGroup(X)
+                            kc.updateGroup(X)
+                            ka.updateGroup(X)
+                            km.updateGroup(X)
+                            kn.updateGroup(X)
+                            ko.updateGroup(X)
+                            kp.updateGroup(X)
+                            kq.updateGroup(X)
+                            kr.updateGroup(X)
+                            kj.updateGroup(X)
                         except:
                             cl.sendText(msg.to,"error")
             if msg.toType == 1:
