@@ -462,6 +462,75 @@ def bot(op):
                                         c = Message(to=op.param1, from_=None, text=None, contentType=13)
                                         c.contentMetadata={'mid':op.param2}
                                         cl.sendMessage(c)
+        if op.type == 13:
+                if op.param3 in mid:
+                    if op.param2 in mid:
+                        G = cl.getGroup(op.param1)
+                        G.preventJoinByTicket = False
+                        cl.updateGroup(G)
+                        Ticket = cl.reissueGroupTicket(op.param1)
+                        cl.acceptGroupInvitationByTicket(op.param1,Ticket)
+                        G.preventJoinByTicket = True
+                        cl.updateGroup(G)
+                        Ticket = cl.reissueGroupTicket(op.param1)
+
+                if op.param3 in mid:
+                    if op.param2 in Amid:
+                        G = ki.getGroup(op.param1)
+                        G.preventJoinByTicket = False
+                        ki.updateGroup(G)
+                        Ticket = ki.reissueGroupTicket(op.param1)
+                        cl.acceptGroupInvitationByTicket(op.param1,Ticket)
+                        G.preventJoinByTicket = True
+                        ki.updateGroup(G)
+                        Ticket = ki.reissueGroupTicket(op.param1)
+
+                if op.param3 in Amid:
+                    if op.param2 in kimid:
+                        X = kk.getGroup(op.param1)
+                        X.preventJoinByTicket = False
+                        kk.updateGroup(X)
+                        Ti = kk.reissueGroupTicket(op.param1)
+                        ki.acceptGroupInvitationByTicket(op.param1,Ticket)
+                        X.preventJoinByTicket = True
+                        kk.updateGroup(X)
+                        Ti = kk.reissueGroupTicket(op.param1)
+
+                if op.param3 in Bmid:
+                    if op.param2 in Cmid:
+                        X = ks.getGroup(op.param1)
+                        X.preventJoinByTicket = False
+                        ks.updateGroup(X)
+                        Ti = ks.reissueGroupTicket(op.param1)
+                        kk.acceptGroupInvitationByTicket(op.param1,Ticket)
+                        X.preventJoinByTicket = True
+                        ks.updateGroup(X)
+                        Ti = ks.reissueGroupTicket(op.param1)
+
+                if op.param3 in Cmid:
+                    if op.param2 in Dmid:
+                        X = kc.getGroup(op.param1)
+                        X.preventJoinByTicket = False
+                        kc.updateGroup(X)
+                        Ti = kc.reissueGroupTicket(op.param1)
+                        ks.acceptGroupInvitationByTicket(op.param1,Ticket)
+                        X.preventJoinByTicket = True
+                        kc.updateGroup(X)
+                        Ti = kc.reissueGroupTicket(op.param1)
+
+                if op.param3 in Dmid:
+                    if op.param2 in Emid:
+                        X = ka.getGroup(op.param1)
+                        X.preventJoinByTicket = False
+                        ka.updateGroup(X)
+                        Ti = ka.reissueGroupTicket(op.param1)
+                        kc.acceptGroupInvitationByTicket(op.param1,Ticket)
+                        X.preventJoinByTicket = True
+                        ka.updateGroup(X)
+                        Ti = ka.reissueGroupTicket(op.param1)
+
+                if op
+
         if op.type == 19:
             if mid in op.param3:
                 wait["blacklist"][op.param2] = True
