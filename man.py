@@ -441,7 +441,7 @@ def bot(op):
                         pass
                     else:
                         try:
-                            koutFromGroup(op.param1,[op.param2])
+                            ki.kickoutFromGroup(op.param1,[op.param2])
                         except:
                             try:
                                 kk.kickoutFromGroup(op.param1,[op.param2])
@@ -847,10 +847,10 @@ def bot(op):
                     ki.updateGroup(X)
                 else:
                     ki.sendText(msg.to,"It can't be used besides the group.")
-            elif ("ki2 gn " in msg.text):
+            elif ("M2 gn:" in msg.text):
                 if msg.toType == 2:
                     X = cl.getGroup(msg.to)
-                    X.name = msg.text.replace("ki2 gn ","")
+                    X.name = msg.text.replace("M2 gn:","")
                     ki2.updateGroup(X)
                 else:
                     ki2.sendText(msg.to,"It can't be used besides the group.")
@@ -1036,18 +1036,6 @@ def bot(op):
                 kq.sendMessage(msg)
                 kr.sendMessage(msg)
                 kj.sendMessage(msg)
-                ki.sendMessage(msg)
-                kk.sendMessage(msg)
-                ks.sendMessage(msg)
-                kc.sendMessage(msg)
-                ka.sendMessage(msg)
-                km.sendMessage(msg)
-                kn.sendMessage(msg)
-                ko.sendMessage(msg)
-                kp.sendMessage(msg)
-                kq.sendMessage(msg)
-                kr.sendMessage(msg)
-                kj.sendMessage(msg)
             elif msg.text in ["Cl","Cancel"]:
                 if msg.toType == 2:
                     group = cl.getGroup(msg.to)
@@ -1065,7 +1053,7 @@ def bot(op):
                     else:
                         cl.sendText(msg.to,"Impossible use besides")
 
-            elif msg.text in ["ผียกเชิญ"]:
+            elif msg.text in ["M1 cancel","ผียกเชิญ"]:
                 if msg.toType == 2:
                     group = ki.getGroup(msg.to)
                     if group.invitee is not None:
@@ -1160,10 +1148,10 @@ def bot(op):
                         else:
                             sinvitee = str(len(ginfo.invitee))
                         if ginfo.preventJoinByTicket == True:
-                            u = "ปิดอยู่"
+                            u = "「Close」"
                         else:
-                            u = "เปิดอยู่"
-                        cl.sendText(msg.to,"[กลุ่ม]\n" + str(ginfo.name) + "\n\n[ไอดีกลุ่ม]\n" + msg.to + "\n\n[ผู้สร้างกลุ่ม]\n" + gCreator + "\n\n[รูปโปรไฟล์กลุ่ม]\nhttp://dl.profile.line.naver.jp/" + ginfo.pictureStatus + "\n\nสมาชิก:" + str(len(ginfo.members)) + " ท่าน\nเชิญ:" + sinvitee + " ท่าน\nURL:" + u + "")
+                            u = "「Open」"
+                        cl.sendText(msg.to,"[ชื่อกลุ่ม]\n" + str(ginfo.name) + "\n\n[ไอดีกลุ่ม]\n" + msg.to + "\n\n[ผู้สร้างกลุ่ม]\n" + gCreator + "\n\n[รูปโปรไฟล์กลุ่ม]\nhttp://dl.profile.line.naver.jp/" + ginfo.pictureStatus + "\n\nจำนวนสมาชิกกลุ่ม「" + str(len(ginfo.members)) + "」ท่าน\nจำนวนสมาชิกค้างเชิญ「" + sinvitee + "」ท่าน\nURL group : " + u + "⛿$ëlf☠️฿❂Ŧ☠️️ℳѦれ..✍️")
                     else:
                         cl.sendText(msg.to,"[名字]\n" + str(ginfo.name) + "\n[gid]\n" + msg.to + "\n[小组的作成者]\n" + gCreator + "\n[小组图标]\nhttp://dl.profile.line.naver.jp/" + ginfo.pictureStatus)
                 else:
