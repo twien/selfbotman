@@ -381,7 +381,7 @@ def bot(op):
             cl.sendText(op.param1,cl.getContact(op.param2).displayName + " ☚ 👣ซัดเต็มข้อเลยครับ ท่านผู้ชม👣" + datetime.today().strftime('%H:%M:%S') )
             print "MEMBER KICK OUT FORM GROUP"
 
-        if op.type == 17:in
+        if op.type == 17:
             if mid in op.param3:
                     group = cl.getGroup(msg.to)
                     gMembMids = [contact.mid for contact in group.members]
@@ -1713,12 +1713,12 @@ def bot(op):
                            cl.kickoutFromGroup(msg.to,[target])
                     else:
                         pass
-            elif "K1 fuck" in msg.text:
+            elif "M1 kick" in msg.text:
 				OWN = "u84eaf58cd49bff840407abe3fc4db59c"
 				if msg.from_ in OWN:
 					pass
 				else:
-					nk0 = msg.text.replace("K1 fuck","")
+					nk0 = msg.text.replace("M1 kick","")
 					nk1 = nk0.lstrip()
 					nk2 = nk1.replace("@","")
 					nk3 = nk2.rstrip()
@@ -1739,12 +1739,12 @@ def bot(op):
 							except:
 									ki.kickoutFromGroup(msg.to, [target])							   
 									pass
-            elif "K2 fuck" in msg.text:
+            elif "M2 kick" in msg.text:
 				OWN = "ud186e0db54125e86130c8219a739e8a1"
 				if msg.from_ in OWN:
 					pass
 				else:
-					nk0 = msg.text.replace("K2 fuck","")
+					nk0 = msg.text.replace("M2 kick","")
 					nk1 = nk0.lstrip()
 					nk2 = nk1.replace("@","")
 					nk3 = nk2.rstrip()
@@ -1766,12 +1766,12 @@ def bot(op):
 									kk.kickoutFromGroup(msg.to, [target])							   
 									pass
 
-            elif "K3 fuck" in msg.text:
+            elif "M3 kick" in msg.text:
 				OWN = "ub5511376daa821f14e7097bc2d7e90aa"
 				if msg.from_ in OWN:
 					pass
 				else:
-					nk0 = msg.text.replace("K3 fuck","")
+					nk0 = msg.text.replace("M3 kick","")
 					nk1 = nk0.lstrip()
 					nk2 = nk1.replace("@","")
 					nk3 = nk2.rstrip()
@@ -1814,9 +1814,9 @@ def bot(op):
                                     wait["blacklist"][target] = True
                                     f=codecs.open('st2__b.json','w','utf-8')
                                     json.dump(wait["blacklist"], f, sort_keys=True, indent=4,ensure_ascii=False)
-                                    cl.sendText(msg.to,"ヽ( ^ω^)ﾉ ƧƲƇƇЄƧƧ")
+                                    cl.sendText(msg.to,"Blacklist" + datetime.today().strftime('%H:%M:%S'))
                                 except:
-                                    cl.sendText(msg.to,"ヽ( ^ω^)ﾉ ƧƲƇƇЄƧƧ")
+                                    cl.sendText(msg.to,"Blacklist" + datetime.today().strftime('%H:%M:%S'))
 #-----------------------------------------------------------
             elif "Mid @" in msg.text:
                 _name = msg.text.replace("Mid @","")
@@ -1850,9 +1850,9 @@ def bot(op):
                                     del wait["blacklist"][target]
                                     f=codecs.open('st2__b.json','w','utf-8')
                                     json.dump(wait["blacklist"], f, sort_keys=True, indent=4,ensure_ascii=False)
-                                    cl.sendText(msg.to,"ヽ( ^ω^)ﾉ ƧƲƇƇЄƧƧ")
+                                    cl.sendText(msg.to,"Whitelist" + datetime.today().strftime('%H:%M:%S'))
                                 except:
-                                    cl.sendText(msg.to,"ヽ( ^ω^)ﾉ ƧƲƇƇЄƧƧ")
+                                    cl.sendText(msg.to,"Whitelist" + datetime.today().strftime('%H:%M:%S'))
 #-----------------------------------------------------------
             elif "Protect:on" == msg.text:
 				if msg.to in protection:
@@ -1897,15 +1897,21 @@ def bot(op):
 				except:
 					pass                                 
 #-----------------------------------------------------------
-            elif msg.text in ["Delete chat"]:
-                cl.removeAllMessages(op.param2)
+            elif msg.text in ["Delete chat","ล้างแชทบอท"]:
                 ki.removeAllMessages(op.param2)
                 kk.removeAllMessages(op.param2)
                 ks.removeAllMessages(op.param2)
                 kc.removeAllMessages(op.param2)
                 ka.removeAllMessages(op.param2)
+                km.removeAllMessages(op.param2)
+                kn.removeAllMessages(op.param2)
+                ko.removeAllMessages(op.param2)
+                kp.removeAllMessages(op.param2)
+                kq.removeAllMessages(op.param2)
+                kr.removeAllMessages(op.param2)
+                kj.removeAllMessages(op.param2)
                 cl.sendText(msg.to,"Delete Chat")
-                cl.sendText(msg.to,"Success...")
+                cl.sendText(msg.to,"Clear chat bots.. " + datetime.today().strftime('%H:%M:%S'))
 #-----------------------------------------------------------
             elif "Spam virus @" in msg.text:
                 _name = msg.text.replace("Spam virus @","")
@@ -2008,7 +2014,7 @@ def bot(op):
                 now2 = datetime.now()
                 wait2['readPoint'][msg.to] = msg.id
                 wait2['readMember'][msg.to] = ""
-                wait2['setTime'][msg.to] = datetime.strftime(now2,'%d-%m-%Y📅 ↔ ⏰%H:%M:%S') 
+                wait2['setTime'][msg.to] = datetime.strftime(now2,'📅%d-%m-%Y  ⏰%H:%M:%S') 
                 wait2['ROM'][msg.to] = {}
                 print wait2
             elif msg.text == "อ่าน":
@@ -2022,16 +2028,16 @@ def bot(op):
 	                print rom
 	                chiya += rom[1] + "\n"
 
-	            cl.sendText(msg.to, " %s\n\n\nPeople who have ignored reads\n(｀・ω・´)\n%s\n\nThese anu anu uesrs have seen at the lastseen point(｀・ω・´)\n[%s]"  % (wait2['readMember'][msg.to],chiya,setTime[msg.to]))
+	            cl.sendText(msg.to, "📇ตรวจสอบรายชื่อ.. [สมาชิกอ่านกลุ่ม]\n╔════════════════════════ ☆۰۪۫%s\n╠═══════════════════ ☆۰۪۫\n%s\═════════════════════ ☆۰۪۫\n║Update the latest time🔎\n║[%s]\n║ By ✍️$ëlf☠️฿❂Ŧ☠️️ℳѦれ☆۰۪۫\n╚═══════════════════ ☆۰۪۫"  % (wait2['readMember'][msg.to],chiya,setTime[msg.to]))
 	          else:
 	            cl.sendText(msg.to, "Sider ga bisa di read cek setpoint dulu bego tinggal ketik\nSetlastpoint\nkalo mau liat sider ketik\nViewlastseen")
 #-----------------------------------------------------------speed
             elif msg.text in ["Ban"]:
                 wait["wblacklist"] = True
-                cl.sendText(msg.to,"ƤԼЄƛƧЄ ƧЄƝƊ ƬHЄ ƛƇƇƠƲƝƬ ƦЄƓƖƧƬЄƦЄƊ ƜƖƬH ƛ ƁԼƛƇƘԼƖƧƬ。")
+                cl.sendText(msg.to,"Set! 💀Blacklist💀 Send Contact")
             elif msg.text in ["Unban"]:
                 wait["dblacklist"] = True
-                cl.sendText(msg.to,"ƤԼЄƛƧЄ ƧЄƝƊ ƬHЄ ƛƇƇƠƲƝƬ ƦЄƓƖƧƬЄƦЄƊ ƜƖƬH ƛ ƁԼƛƇƘԼƖƧƬ。")
+                cl.sendText(msg.to,"Set! 😇Whitelist😇 Send Contact")
             elif msg.text in ["Banlist"]:
                 if wait["blacklist"] == {}:
                     cl.sendText(msg.to,"ƬHЄƦЄ ƖƧƝ'Ƭ ƛ ƤЄƦƧƠƝ MƛƊЄ ƛ ƁԼƛƇƘԼƖƧƬ.。")
@@ -2148,7 +2154,7 @@ def bot(op):
 ║By..⛿$ëlf☠️฿❂Ŧ☠️️ℳѦれ..✍️
 ╚══════════════════""")
 #-----------------------------------------------
-            elif "Nk " in msg.text:
+            elif "ปิดใช้งานคำสั่งนี้" in msg.text:
                        nk0 = msg.text.replace("Nk ","")
                        nk1 = nk0.lstrip()
                        nk2 = nk1.replace("@","")
