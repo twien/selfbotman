@@ -372,13 +372,13 @@ def bot(op):
         if op.type == 15:
             if op.param2 in bot1:
                 return
-            cl.sendText(op.param1,"👋😂 Ɓy℮ Bye ☛[" + cl.getContact(op.param2).displayName + "]☚ " + datetime.today().strftime('%H:%M:%S') )
+            cl.sendText(op.param1,"👋😂 Ɓy℮ Bye ☛" + cl.getContact(op.param2).displayName + "☚ \n Update time" + datetime.today().strftime('%H:%M:%S') )
             print ("MEMBER HAS LEFT THE GROUP")
 
         if op.type == 19:
             if op.param2 in bot1:
                 return
-            cl.sendText(op.param1,cl.getContact(op.param2).displayName + " ☚ 👣ซัดเต็มข้อเลยครับ ท่านผู้ชม👣" + datetime.today().strftime('%H:%M:%S') )
+            cl.sendText(op.param1,cl.getContact(op.param2).displayName + " ☚ 👣ซัดเต็มข้อเลยครับ👣..ท่านผู้ชม😅" + datetime.today().strftime('%H:%M:%S') )
             print "MEMBER KICK OUT FORM GROUP"
 
         if op.type == 17:
