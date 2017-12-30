@@ -231,9 +231,18 @@ protecturl = []
 protection = []
 autocancel = {}
 autoinvite = []
-autoleaveroom = [] 
-
+autoleaveroom = []
+targets = []
+Bots = ["ud24af63fd62d14c3bf8f719df80c3745",mid,Amid,Bmid,Cmid,Dmid,Emid,Fmid,Gmid,Hmid,Imid,Jmid,Kmid,Lmid,Mmid,Nmid,Omid]
+self = ["ud24af63fd62d14c3bf8f719df80c3745",mid,Amid,Bmid,Cmid,Dmid,Emid,Fmid,Gmid,Hmid,Imid,Jmid,Kmid,Lmid,Mmid,Nmid,Omid]
+admin = "ud24af63fd62d14c3bf8f719df80c3745"
+owner = "ud24af63fd62d14c3bf8f719df80c3745"
+admsa = "ud24af63fd62d14c3bf8f719df80c3745"
+adminMID = "ud24af63fd62d14c3bf8f719df80c3745"
 admins = ["ud24af63fd62d14c3bf8f719df80c3745"]
+Rx15 = ["ub92205c8a82ff4e863b92f8808578156"]
+Rx14 = ["u1f7a7dd9c729951554ccbffe4891ad84"]
+Rx13 = ["u4e9752b838f3c55929aa8b82e38b5745"]
 Rx12 = ["ud55447120723d599b2bce2d67b14eb08"]
 Rx11 = ["u69e29260fae1bae30db65dc8c24c0f16"]
 Rx10 = ["ub2d390fda0c7ec03373009a97debe6f9"]
@@ -246,8 +255,8 @@ Rx4 = ["u2b8cc0e7eb9e1acdd76ac52cbd304de3"]
 Rx3 = ["ub5511376daa821f14e7097bc2d7e90aa"]
 Rx2 = ["ud186e0db54125e86130c8219a739e8a1"]
 Rx1 = ["u84eaf58cd49bff840407abe3fc4db59c"]
-Administrator = admins + Rx12 + Rx11 + Rx10 + Rx9 + Rx8 + Rx7 + Rx6 + Rx5 + Rx4 + Rx3 + Rx2 + Rx1
-AS = Rx2 + Rx1 + Rx3 + Rx4 + Rx5 + Rx6 + Rx7 + Rx8 + Rx9 + Rx10 + Rx11 + Rx12
+Administrator = admins + Rx15 + Rx14 + Rx13 + Rx12 + Rx11 + Rx10 + Rx9 + Rx8 + Rx7 + Rx6 + Rx5 + Rx4 + Rx3 + Rx2 + Rx1
+AS = Rx2 + Rx1 + Rx3 + Rx4 + Rx5 + Rx6 + Rx7 + Rx8 + Rx9 + Rx10 + Rx11 + Rx12 + Rx13 + Rx14 + Rx15
 adminsA = admins + Rx3 + Rx5
 Administrator = admins + Rx5 + Rx4 + Rx3 + Rx2 + Rx1
 
@@ -297,7 +306,7 @@ http://line.me/ti/p/~1ove..neverdie
 http://line.me/ti/p/%40uvh1233u
 """,
     "lang":"JP",
-    "comment":"☛ Auto Like ☚ ᵀᴴᴬᴵᴸᴬᴺᴰ⛿️Protect-BOT\n📧http://line.me/R/ti/p/%40uvh1233u ", 
+    "comment":"☛ Auto Like [ᴍ̶̲̅ᴀ̶̲̅ɴ̶̲̅] ☚\n\n ѕєʟғвот ᵀᴴᴬᴵᴸᴬᴺᴰ⛿️ Protect-BOT\n📧http://line.me/R/ti/p/%40uvh1233u ", 
     "likeOn":True,
     "commentOn":True,
     "commentBlack":{},
@@ -334,6 +343,102 @@ save1 = {
     "statusMessage":"",
     "pictureStatus":""
 }
+
+contact = cl.getProfile()
+mybackup = cl.getProfile()
+mybackup.displayName = contact.displayName
+mybackup.statusMessage = contact.statusMessage
+mybackup.pictureStatus = contact.pictureStatus
+
+contact = ka.getProfile()
+backup = ka.getProfile()
+backup.displayName = contact.displayName
+backup.statusMessage = contact.statusMessage
+backup.pictureStatus = contact.pictureStatus
+
+contact = kb.getProfile()
+backup = kb.getProfile()
+backup.displayName = contact.displayName
+backup.statusMessage = contact.statusMessage
+backup.pictureStatus = contact.pictureStatus
+
+contact = kc.getProfile()
+backup = kc.getProfile()
+backup.displayName = contact.displayName
+backup.statusMessage = contact.statusMessage
+backup.pictureStatus = contact.pictureStatus
+
+contact = kd.getProfile()
+backup = kd.getProfile()
+backup.displayName = contact.displayName
+backup.statusMessage = contact.statusMessage
+backup.pictureStatus = contact.pictureStatus
+
+contact = ke.getProfile()
+backup = ke.getProfile()
+backup.displayName = contact.displayName
+backup.statusMessage = contact.statusMessage
+backup.pictureStatus = contact.pictureStatus
+
+contact = kf.getProfile()
+backup = kf.getProfile()
+backup.displayName = contact.displayName
+backup.statusMessage = contact.statusMessage
+backup.pictureStatus = contact.pictureStatus
+
+contact = kg.getProfile()
+backup = kg.getProfile()
+backup.displayName = contact.displayName
+backup.statusMessage = contact.statusMessage
+backup.pictureStatus = contact.pictureStatus
+
+contact = kh.getProfile()
+backup = kh.getProfile()
+backup.displayName = contact.displayName
+backup.statusMessage = contact.statusMessage
+backup.pictureStatus = contact.pictureStatus
+
+contact = ki.getProfile()
+backup = ki.getProfile()
+backup.displayName = contact.displayName
+backup.statusMessage = contact.statusMessage
+backup.pictureStatus = contact.pictureStatus
+
+contact = kj.getProfile()
+backup = kj.getProfile()
+backup.displayName = contact.displayName
+backup.statusMessage = contact.statusMessage
+backup.pictureStatus = contact.pictureStatus
+
+contact = kk.getProfile()
+backup = kk.getProfile()
+backup.displayName = contact.displayName
+backup.statusMessage = contact.statusMessage
+backup.pictureStatus = contact.pictureStatus
+
+contact = kl.getProfile()
+backup = kl.getProfile()
+backup.displayName = contact.displayName
+backup.statusMessage = contact.statusMessage
+backup.pictureStatus = contact.pictureStatus
+
+contact = km.getProfile()
+backup = km.getProfile()
+backup.displayName = contact.displayName
+backup.statusMessage = contact.statusMessage
+backup.pictureStatus = contact.pictureStatus
+
+contact = kn.getProfile()
+backup = kn.getProfile()
+backup.displayName = contact.displayName
+backup.statusMessage = contact.statusMessage
+backup.pictureStatus = contact.pictureStatus
+
+contact = ko.getProfile()
+backup = ko.getProfile()
+backup.displayName = contact.displayName
+backup.statusMessage = contact.statusMessage
+backup.pictureStatus = contact.pictureStatus
 
 def Cmd(string, commands): #/XXX, >XXX, ;XXX, ^XXX, %XXX, $XXX...
     tex = [""]
