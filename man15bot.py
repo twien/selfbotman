@@ -9,56 +9,68 @@ import re,string,os
 import os.path,sys,urllib,shutil,subprocess,pickle
 
 cl = LINETCR.LINE()
-cl.login(qr=True)
+cl.login(token="Eo85ATq0e0FJbrZUPkY5.0KR2p9yTfmo+J3gD/aW3rq.m3JqzU//0isZ1u84PDtEf4PbUToFSFo5vr+H8cqkPdc")
 cl.loginResult()
 
-ki = LINETCR.LINE()
-ki.login(qr=True)
-ki.loginResult()
-
-kk = LINETCR.LINE()
-kk.login(qr=True)
-kk.loginResult()
-
-ks = LINETCR.LINE()
-ks.login(qr=True)
-ks.loginResult()
-
-kc = LINETCR.LINE()
-kc.login(qr=True)
-kc.loginResult()
-
 ka = LINETCR.LINE()
-ka.login(qr=True)
+ka.login(token="Eo1niLhJ6Q1xmXbhQGZc.HoR1JnsB+4qeb6VJ+e21Na.YtiAcKskFQ76877rgqIQxeF/lQv3a0FhgUHmX1vMoqk")
 ka.loginResult()
 
+kb = LINETCR.LINE()
+kb.login(token="EoiSakst6a8257VcXbe1.0yBG21qsxOytdiizPZNOOq.JlVNzkuNXDOHG4rb+UGj6WjLDtJ43ZvV2usCte/kFKY")
+kb.loginResult()
+
+kc = LINETCR.LINE()
+kc.login(token="EoMYKLtAnYUEYH5fuLUa.TvetDTQOiFfoCjE8lx6qQG.avNTzEQ3Q2j8HgBzupma3evR/hsaHkdsTWF+p/sm2Jo")
+kc.loginResult()
+
+kd = LINETCR.LINE()
+kd.login(token="EoSDTOj5yoCm51OEAmu3.k4Za5/UEgS3xASuSVtbn4W.tU4Xs/IdzSc0hSEGiaAMvHg0bZJ3to3AoK82D5AbL1w")
+kd.loginResult()
+
+ke = LINETCR.LINE()
+ke.login(token="EogzBa3UsPCY15W391na.s/dq/M0GLZkiMLYg3XHlcG.1YuGhYjbT5h6n/Ah5I+c3qiQLREWgGpvq34E/tElDhI")
+ke.loginResult()
+
+kf = LINETCR.LINE()
+kf.login(token="EoKoyglJ9czSRvqLI4Y8.fKk7jKzQ5mzh1YnPidc0ga.geEVnKpgki6bS1vAtUA80jU7385bE0CXZ8Lecyskvss")
+kf.loginResult()
+
+kg = LINETCR.LINE()
+kg.login(token="EojjldTdtw90MHXZja42.GEJaLf18HIrlmEJ3dKxw4G.HQngGBiARg824aAAceT5se/hpDb8zrI/FtL2qKX/FDc")
+kg.loginResult()
+
+kh = LINETCR.LINE()
+kh.login(token="EoYXQMokK7oFR87rVVWb.R+TwP1t4enhkFeLLHqn0sW.A2qWv+eQyczoyi2gpEdizFp7bAvfTij0DQPXMDnMsis")
+kh.loginResult()
+
+ki = LINETCR.LINE()
+ki.login(token="EoTKTnZyyCj0ohpXqqh8.PHu9Jj2QfTEzOzCw7q5q/a.EcLJcYV+s8J9C+t7buGo4oWK4jG+1XXnysfDPOYC808")
+ki.loginResult()
+
+kj = LINETCR.LINE()
+kj.login(token="EoDK9oblGyVxk9W9rOL9.SToq+Adh7am3maMPFEVM/q.DeXZbr9ZD0AzG9XaZj+s9vtKnudtdl+CZHrqlJI7pJM")
+kj.loginResult()
+
+kk = LINETCR.LINE()
+kk.login(token="EotgXquzDRP9pJpXZDS6.AEksypRHUUmnTL3iWKWpfG.BwWfzSCJeSjambuszXEC74+T8q7tfNlouj4OO8Pa2BQ")
+kk.loginResult()
+
+kl = LINETCR.LINE()
+kl.login(token="Eo2yQ1EQk9hsXMlCQus8.1vrheGCJ1zMYVolwEXtRca.QLv7WOGH/apBsfoETRrfsMQ0WtagfxaUJpKliIky6Zw")
+kl.loginResult()
+
 km = LINETCR.LINE()
-km.login(qr=True)
+km.login(token="EotkuhJZmnLTowCsfYt5.tPDsUdJZXvKPQOUc44Txrq.ckFssNQRmr8sQvm+MOkMFdE1ZUYIrSXGm+9XOgU+jnU")
 km.loginResult()
 
 kn = LINETCR.LINE()
-kn.login(qr=True)
+kn.login(token="Eo2KwrGlPGwsYTqRXdX4.h3P92CCPLrvuZl+/sjgTHa.Ar9v/y0Kc2ZhNN6TWn7nLuBlPHXtA+bSd0xviSk/1yk")
 kn.loginResult()
 
 ko = LINETCR.LINE()
-ko.login(qr=True)
+ko.login(token="Eo50jdkPwIYDjsgyLPR6.UsifYkGV9oHJUs/icfEbvG.Xs8gxCLKVO7WJhaA7COUCtUCricjLCAMxaaIl23yS3o")
 ko.loginResult()
-
-kp = LINETCR.LINE()
-kp.login(qr=True)
-kp.loginResult()
-
-kq = LINETCR.LINE()
-kq.login(qr=True)
-kq.loginResult()
-
-kr = LINETCR.LINE()
-kr.login(qr=True)
-kr.loginResult()
-
-kj = LINETCR.LINE()
-kj.login(qr=True)
-kj.loginResult()
 
 cl
 
@@ -160,50 +172,59 @@ helpMessage2 =""" Mr. Bots…⛿
 ╠❂➣[BLOCKINVITE:ON/OFF]ล็อกเชิญ
 ╚════════════════════════ 
 """ 
-KAC = [cl,ki,kk,ks,kc,ka,km,kn,ko,kp,kq,kr,kj]
-KAB1 = ki.getProfile().mid
-KAB2 = kk.getProfile().mid
-KAB3 = ks.getProfile().mid
-KAB4 = kc.getProfile().mid
-KAB5 = ka.getProfile().mid
-KAB6 = km.getProfile().mid
-KAB7 = kn.getProfile().mid
-KAB8 = ko.getProfile().mid
-KAB9 = kp.getProfile().mid
-KAB10 = kq.getProfile().mid
-KAB11 = kr.getProfile().mid
-KAB12 = kj.getProfile().mid
+KAC = [cl,ka,kb,kc,kd,ke,kf,kg,kh,ki,kj,kk,kl,km,kn,ko]
+KAB1 = ka.getProfile().mid
+KAB2 = kb.getProfile().mid
+KAB3 = kc.getProfile().mid
+KAB4 = kd.getProfile().mid
+KAB5 = ke.getProfile().mid
+KAB6 = kf.getProfile().mid
+KAB7 = kg.getProfile().mid
+KAB8 = kh.getProfile().mid
+KAB9 = ki.getProfile().mid
+KAB10 = kj.getProfile().mid
+KAB11 = kk.getProfile().mid
+KAB12 = kl.getProfile().mid
+KAB13 = km.getProfile().mid
+KAB14 = kn.getProfile().mid
+KAB15 = ko.getProfile().mid
 mid = cl.getProfile().mid
-Amid = ki.getProfile().mid
-kimid = kk.getProfile().mid
-ki2mid = ks.getProfile().mid
+Amid = ka.getProfile().mid
+Bmid = kb.getProfile().mid
 Cmid = kc.getProfile().mid
-Emid = ka.getProfile().mid
-Fmid = km.getProfile().mid
-Gmid = kn.getProfile().mid
-Hmid = ko.getProfile().mid
-Imid = kp.getProfile().mid
-Jmid = kq.getProfile().mid
-Kmid = kr.getProfile().mid
-Lmid = kj.getProfile().mid
+Dmid = kd.getProfile().mid
+Emid = ke.getProfile().mid
+Fmid = kf.getProfile().mid
+Gmid = kg.getProfile().mid
+Hmid = kh.getProfile().mid
+Imid = ki.getProfile().mid
+Jmid = kj.getProfile().mid
+Kmid = kk.getProfile().mid
+Lmid = kl.getProfile().mid
+Mmid = km.getProfile().mid
+Nmid = kn.getProfile().mid
+Omid = ko.getProfile().mid
 
-Bots=[mid,Amid,kimid,ki2mid,Cmid,Emid,Fmid,Gmid,Hmid,Imid,Jmid,Kmid,Lmid]
+Bots=[mid,Amid,Bmid,Cmid,Dmid,Emid,Fmid,Gmid,Hmid,Imid,Jmid,Kmid,Lmid,Mmid,Nmid,Omid]
 admin = ["ud24af63fd62d14c3bf8f719df80c3745"]
 me = cl.getProfile().mid
 bot1 = cl.getProfile().mid
 main = cl.getProfile().mid
-kicker1 = ki.getProfile().mid
-kicker2 = kk.getProfile().mid
-kicker3 = ks.getProfile().mid
-kicker4 = kc.getProfile().mid
-kicker5 = ka.getProfile().mid
-kicker6 = km.getProfile().mid
-kicker7 = kn.getProfile().mid
-kicker8 = ko.getProfile().mid
-kicker9 = kp.getProfile().mid
-kicker10 = kq.getProfile().mid
-kicker11 = kr.getProfile().mid
-kicker12 = kj.getProfile().mid
+kicker1 = ka.getProfile().mid
+kicker2 = kb.getProfile().mid
+kicker3 = kc.getProfile().mid
+kicker4 = kd.getProfile().mid
+kicker5 = ke.getProfile().mid
+kicker6 = kf.getProfile().mid
+kicker7 = kg.getProfile().mid
+kicker8 = kh.getProfile().mid
+kicker9 = ki.getProfile().mid
+kicker10 = kj.getProfile().mid
+kicker11 = kk.getProfile().mid
+kicker12 = kl.getProfile().mid
+kicker13 = km.getProfile().mid
+kicker14 = kn.getProfile().mid
+kicker15 = ko.getProfile().mid
 bots = me + kicker1
 protectname = []
 protecturl = []
