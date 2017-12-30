@@ -205,8 +205,12 @@ Mmid = km.getProfile().mid
 Nmid = kn.getProfile().mid
 Omid = ko.getProfile().mid
 
-Bots=[mid,Amid,Bmid,Cmid,Dmid,Emid,Fmid,Gmid,Hmid,Imid,Jmid,Kmid,Lmid,Mmid,Nmid,Omid]
+Bots = ["ud24af63fd62d14c3bf8f719df80c3745",mid,Amid,Bmid,Cmid,Dmid,Emid,Fmid,Gmid,Hmid,Imid,Jmid,Kmid,Lmid,Mmid,Nmid,Omid]
+self = ["ud24af63fd62d14c3bf8f719df80c3745",mid,Amid,Bmid,Cmid,Dmid,Emid,Fmid,Gmid,Hmid,Imid,Jmid,Kmid,Lmid,Mmid,Nmid,Omid]
 admin = ["ud24af63fd62d14c3bf8f719df80c3745"]
+owner = ["ud24af63fd62d14c3bf8f719df80c3745"]
+admsa = ["ud24af63fd62d14c3bf8f719df80c3745"]
+adminMID = ["ud24af63fd62d14c3bf8f719df80c3745"]
 me = cl.getProfile().mid
 bot1 = cl.getProfile().mid
 main = cl.getProfile().mid
@@ -233,12 +237,7 @@ autocancel = {}
 autoinvite = []
 autoleaveroom = []
 targets = []
-Bots = ["ud24af63fd62d14c3bf8f719df80c3745",mid,Amid,Bmid,Cmid,Dmid,Emid,Fmid,Gmid,Hmid,Imid,Jmid,Kmid,Lmid,Mmid,Nmid,Omid]
-self = ["ud24af63fd62d14c3bf8f719df80c3745",mid,Amid,Bmid,Cmid,Dmid,Emid,Fmid,Gmid,Hmid,Imid,Jmid,Kmid,Lmid,Mmid,Nmid,Omid]
-admin = "ud24af63fd62d14c3bf8f719df80c3745"
-owner = "ud24af63fd62d14c3bf8f719df80c3745"
-admsa = "ud24af63fd62d14c3bf8f719df80c3745"
-adminMID = "ud24af63fd62d14c3bf8f719df80c3745"
+
 admins = ["ud24af63fd62d14c3bf8f719df80c3745"]
 Rx15 = ["ub92205c8a82ff4e863b92f8808578156"]
 Rx14 = ["u1f7a7dd9c729951554ccbffe4891ad84"]
