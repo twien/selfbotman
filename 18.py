@@ -654,8 +654,6 @@ def bot(op):
                         cl.updateGroup(G)
                         Ticket = cl.reissueGroupTicket(op.param1)
 
-
-
                 if op.param3 in mid:
                     if op.param2 in Amid:
                         G = ki.getGroup(op.param1)
@@ -2785,11 +2783,11 @@ https://line.me/R/ti/p/%40uvh1233u
                 msg.contentMetadata={'PRDID': 'a0768339-c2d3-4189-9653-2909e9bb6f58', 'PRDTYPE': 'THEME', 'MSGTPL': '6'}
                 msg.text = None
                 ke.sendMessage(msg)
-            elif msg.text in ["Allgift","All Gift"]:
+            elif msg.text in ["Allgift","All gift"]:
                 msg.contentType = 9
                 msg.contentMetadata={'PRDID': 'a0768339-c2d3-4189-9653-2909e9bb6f58',
                                     'PRDTYPE': 'THEME',
-                                    'MSGTPL': '12'}
+                                    'MSGTPL': '6'}
                 msg.text = None
                 ki.sendMessage(msg)
                 kk.sendMessage(msg)
@@ -3384,7 +3382,7 @@ http://line.me/ti/p/09T2waRE7l
             elif "Id" == msg.text:
                 key = msg.to
                 cl.sendText(msg.to, key)
-            elif "Bot mid" == msg.text:
+            elif "All mid" == msg.text:
 		#	cl.sendText(msg.to,mid)
 			ki.sendText(msg.to,Amid)
 			kk.sendText(msg.to,Bmid)
@@ -3417,24 +3415,13 @@ http://line.me/ti/p/09T2waRE7l
                 msg.contentMetadata = {"mid":mmid}
                 cl.sendMessage(msg)
 
-            elif "Phet Keyy" in msg.text:
-                cl.sendText(msg.to,""" 􀜁􀇔􏿿􀜁􀇔􏿿[{PHET HACK BOT}] 􀜁􀇔􏿿􀜁􀇔􏿿 \n\n 􀜁􀇔􏿿 key Only Kicker 􀜁􀇔􏿿 \n\n􀜁􀇔􏿿[Kb1 in]\n􀜁􀇔􏿿[1Aditname:]\n􀜁􀇔􏿿[B Cancel]\n􀜁􀇔􏿿[kick @]\n􀜁􀇔􏿿[Ban @]\n􀜁􀇔􏿿[kill]\n􀜁􀇔􏿿[BotChat]\n􀜁􀇔􏿿[Respons]\n􀜁􀇔􏿿[Pb1 Gift]\n􀜁􀇔􏿿[Pb1 bye]\n\n
-
-❦❧〖฿❂Ŧ〗☞ᵀËÄM ທஇລ❂ق B❂T✓
-​❦❧ ᵀËÄM ℓℓπ้ी૪ B❂T ✓
-❦❧ ᵀËÄM ທஇລ❂قB❂T ✓
-☠Ҝŋ β☢ȶȶ ƿℓαÿєᴿ☠
-✍ Ŧ€₳M ж Ħ₳ʗҜ฿❂Ŧ ✈​
-Ŧ€₳M ​✍ ທஇລ❂قীள้௭ิњ ✈
-☢Ŧ€₳M≈ನန้ণএ≈฿❂Ŧ☢
-･⋆ ざঝণのঝ  ⋆ ･
-♤ のю४ণধபӘທ ♤
-🇹🇭 ฿ΘŧŧĽÎη℮Ŧђάίłάήđ 🇹🇭
-
-[By.🐯 हईທຮຮๅજईह 🐯]
-[By.β•`BF.บั้ม•`]
-[By.Gυ Tєʌм HʌcκBoт]
-[By.❦〖Ᵽɧëȶ〗☞ᵀËÄM ທஇລ❂ق B❂T✓]
+            elif "Bot key" in msg.text:
+                cl.sendText(msg.to,""" ──────┅═ই۝ई═┅──────
+สนใจติดต่อที่  ѕєʟғвот[ᴍ̶̲̅ᴀ̶̲̅ɴ̶̲̅]κɪcκєʀ
+http://line.me/ti/p/~1ove..neverdie
+ နับთิஏთั้ଏบਹທ Sirichan V⒑
+https://line.me/R/ti/p/%40uvh1233u
+──────┅═ই۝ई═┅──────  \n\n 􀜁􀇔􏿿 key Only Kicker 􀜁􀇔􏿿 \n\n􀜁􀇔􏿿[M1 in]\n􀜁􀇔􏿿[1Aditname:]\n􀜁􀇔􏿿[B Cancel]\n􀜁􀇔􏿿[kick @]\n􀜁􀇔􏿿[Ban @]\n􀜁􀇔􏿿[kill]\n􀜁􀇔􏿿[BotChat]\n􀜁􀇔􏿿[Respons]\n􀜁􀇔􏿿[Bot1 Gift]\n􀜁􀇔􏿿[M1 bye]\n\n
 """)
 
             elif msg.text.lower() == 'ยกเลิก1':
@@ -3469,11 +3456,11 @@ http://line.me/ti/p/09T2waRE7l
 
             elif "Mid" == msg.text:
                 cl.sendText(msg.to,mid)			
-            elif "P1 mid" == msg.text:
+            elif "M1 mid" == msg.text:
                 ki.sendText(msg.to,Amid)
-            elif "P2 mid" == msg.text:
+            elif "M2 mid" == msg.text:
                 kk.sendText(msg.to,Bmid)
-            elif "P3 mid" == msg.text:
+            elif "M3 mid" == msg.text:
                 kc.sendText(msg.to,Cmid)
 
             elif msg.text == "กลุ่ม":
@@ -3500,27 +3487,27 @@ http://line.me/ti/p/09T2waRE7l
                         cl.sendText(msg.to,"Can not be used outside the group")
                     else:
                          cl.sendText(msg.to,"Not for use less than group")
-            elif "Bot?" in msg.text:
-                ki.sendText(msg.to,"Bot 1🔥")
-                kk.sendText(msg.to,"Bot 2🔥")
-                kc.sendText(msg.to,"Bot 3🔥")
-                kd.sendText(msg.to,"Bot 4🔥")
-                ke.sendText(msg.to,"Bot 5🔥")
-                kf.sendText(msg.to,"Bot 6🔥")
-                kg.sendText(msg.to,"Bot 7🔥")
-                kh.sendText(msg.to,"Bot 8🔥")
-                kj.sendText(msg.to,"Bot 9🔥")
-                kl.sendText(msg.to,"Bot 10🔥")
-                km.sendText(msg.to,"Bot 11🔥")
-                kn.sendText(msg.to,"Bot 12🔥")
-                ko.sendText(msg.to,"Bot 13🔥")
-                kp.sendText(msg.to,"Bot 14🔥")
-                kq.sendText(msg.to,"Bot 15🔥")
-                kr.sendText(msg.to,"Bot 16🔥")
-                ks.sendText(msg.to,"Bot 17🔥")
-                kt.sendText(msg.to,"Bot 18🔥")
-            elif "Phet Say " in msg.text:
-                                bctxt = msg.text.replace("Phet Say ","")
+            elif "Respon" in msg.text:
+                ki.sendText(msg.to,"Bot 1 💀κɪcκєʀ")
+                kk.sendText(msg.to,"Bot 2 💀κɪcκєʀ")
+                kc.sendText(msg.to,"Bot 3 💀κɪcκєʀ")
+                kd.sendText(msg.to,"Bot 4 💀κɪcκєʀ")
+                ke.sendText(msg.to,"Bot 5 💀κɪcκєʀ")
+                kf.sendText(msg.to,"Bot 6 💀κɪcκєʀ")
+                kg.sendText(msg.to,"Bot 7 💀κɪcκєʀ")
+                kh.sendText(msg.to,"Bot 8 💀κɪcκєʀ")
+                kj.sendText(msg.to,"Bot 9 💀κɪcκєʀ")
+                kl.sendText(msg.to,"Bot 10 💀κɪcκєʀ")
+                km.sendText(msg.to,"Bot 11 💀κɪcκєʀ")
+                kn.sendText(msg.to,"Bot 12 💀κɪcκєʀ")
+                ko.sendText(msg.to,"Bot 13 💀κɪcκєʀ")
+                kp.sendText(msg.to,"Bot 14 💀κɪcκєʀ")
+                kq.sendText(msg.to,"Bot 15 💀κɪcκєʀ")
+                kr.sendText(msg.to,"Bot 16 💀κɪcκєʀ")
+                ks.sendText(msg.to,"Bot 17 💀κɪcκєʀ")
+                kt.sendText(msg.to,"Bot 18 💀κɪcκєʀ")
+            elif "Man Say " in msg.text:
+                                bctxt = msg.text.replace("Man Say ","")
                                 ki.sendText(msg.to,(bctxt))
                                 kk.sendText(msg.to,(bctxt))
                                 kc.sendText(msg.to,(bctxt))
@@ -3543,11 +3530,11 @@ http://line.me/ti/p/09T2waRE7l
             elif "Tl: " in msg.text:
                 tl_text = msg.text.replace("Tl: ","")
                 cl.sendText(msg.to,"line://home/post?userMid="+mid+"&postId="+cl.new_post(tl_text)["result"]["post"]["postInfo"]["postId"])
-            elif "P1 tl: " in msg.text:
-                tl_text = msg.text.replace("P1 tl: ","")
+            elif "M1 tl: " in msg.text:
+                tl_text = msg.text.replace("M1 tl: ","")
                 ki.sendText(msg.to,"line://home/post?userMid="+mid+"&postId="+ki.new_post(tl_text)["result"]["post"]["postInfo"]["postId"])
-            elif "P2 tl: " in msg.text:
-                tl_text = msg.text.replace("P2 tl: ","")
+            elif "M2 tl: " in msg.text:
+                tl_text = msg.text.replace("M2 tl: ","")
                 kk.sendText(msg.to,"line://home/post?userMid="+mid+"&postId="+kk.new_post(tl_text)["result"]["post"]["postInfo"]["postId"])
             elif msg.text in ["Protect:on","Protect on"]:
                 if wait["protectionOn"] == True:
@@ -3632,127 +3619,127 @@ http://line.me/ti/p/09T2waRE7l
                 if msg.from_ in admin:
                  wait["winvite"] = True
                  cl.sendText(msg.to,"send contact")
-            elif "P1 rename: " in msg.text:
-                string = msg.text.replace("P1 rename: ","")
+            elif "M1 rename: " in msg.text:
+                string = msg.text.replace("M1 rename: ","")
                 if len(string.decode('utf-8')) <= 20:
                     profile_B = ki.getProfile()
                     profile_B.displayName = string
                     ki.updateProfile(profile_B)
                     ki.sendText(msg.to,"Name " + string + " Done Bosqu")
-            elif "P2 rename: " in msg.text:
-                string = msg.text.replace("P2 rename: ","")
+            elif "M2 rename: " in msg.text:
+                string = msg.text.replace("M2 rename: ","")
                 if len(string.decode('utf-8')) <= 20:
                     profile_B = kk.getProfile()
                     profile_B.displayName = string
                     kk.updateProfile(profile_B)
                     kk.sendText(msg.to,"Name " + string + " Done Bosqu")
-            elif "P3 rename: " in msg.text:
-                string = msg.text.replace("P3 rename: ","")
+            elif "M3 rename: " in msg.text:
+                string = msg.text.replace("M3 rename: ","")
                 if len(string.decode('utf-8')) <= 20:
                     profile_B = kc.getProfile()
                     profile_B.displayName = string
                     kc.updateProfile(profile_B)
                     kc.sendText(msg.to,"Name " + string + " Done Bosqu")
-            elif "P4 rename: " in msg.text:
-                string = msg.text.replace("P4 rename: ","")
+            elif "M4 rename: " in msg.text:
+                string = msg.text.replace("M4 rename: ","")
                 if len(string.decode('utf-8')) <= 20:
                     profile_B = kd.getProfile()
                     profile_B.displayName = string
                     kd.updateProfile(profile_B)
                     kd.sendText(msg.to,"Name " + string + " Done Bosqu")
-            elif "P5 rename: " in msg.text:
-                string = msg.text.replace("P5 rename: ","")
+            elif "M5 rename: " in msg.text:
+                string = msg.text.replace("M5 rename: ","")
                 if len(string.decode('utf-8')) <= 20:
                     profile_B = ke.getProfile()
                     profile_B.displayName = string
                     ke.updateProfile(profile_B)
                     ke.sendText(msg.to,"Name " + string + " Done Bosqu")
-            elif "P6 rename: " in msg.text:
-                string = msg.text.replace("P6 rename: ","")
+            elif "M6 rename: " in msg.text:
+                string = msg.text.replace("M6 rename: ","")
                 if len(string.decode('utf-8')) <= 20:
                     profile_B = kf.getProfile()
                     profile_B.displayName = string
                     kf.updateProfile(profile_B)
                     kf.sendText(msg.to,"Name " + string + " Done Bosqu")
-            elif "P7 rename: " in msg.text:
-                string = msg.text.replace("P7 rename: ","")
+            elif "M7 rename: " in msg.text:
+                string = msg.text.replace("M7 rename: ","")
                 if len(string.decode('utf-8')) <= 20:
                     profile_B = kg.getProfile()
                     profile_B.displayName = string
                     kg.updateProfile(profile_B)
                     kg.sendText(msg.to,"Name " + string + " Done Bosqu")
-            elif "P8 rename: " in msg.text:
-                string = msg.text.replace("P8 rename: ","")
+            elif "M8 rename: " in msg.text:
+                string = msg.text.replace("M8 rename: ","")
                 if len(string.decode('utf-8')) <= 20:
                     profile_B = kh.getProfile()
                     profile_B.displayName = string
                     kh.updateProfile(profile_B)
                     kh.sendText(msg.to,"Name " + string + " Done Bosqu")
-            elif "P9 rename: " in msg.text:
-                string = msg.text.replace("P9 rename: ","")
+            elif "M9 rename: " in msg.text:
+                string = msg.text.replace("M9 rename: ","")
                 if len(string.decode('utf-8')) <= 20:
                     profile_B = kj.getProfile()
                     profile_B.displayName = string
                     kj.updateProfile(profile_B)
                     kj.sendText(msg.to,"Name " + string + " Done Bosqu")
-            elif "P10 rename: " in msg.text:
-                string = msg.text.replace("P10 rename: ","")
+            elif "M10 rename: " in msg.text:
+                string = msg.text.replace("M10 rename: ","")
                 if len(string.decode('utf-8')) <= 20:
                     profile_B = kl.getProfile()
                     profile_B.displayName = string
                     kl.updateProfile(profile_B)
                     kl.sendText(msg.to,"Name " + string + " Done Bosqu")                                
-            elif "P11 rename: " in msg.text:
-                string = msg.text.replace("P11 rename: ","")
+            elif "M11 rename: " in msg.text:
+                string = msg.text.replace("M11 rename: ","")
                 if len(string.decode('utf-8')) <= 20:
                     profile_B = km.getProfile()
                     profile_B.displayName = string
                     km.updateProfile(profile_B)
                     km.sendText(msg.to,"Name " + string + " Done Bosqu")                                
-            elif "P12 rename: " in msg.text:
-                string = msg.text.replace("P12 rename: ","")
+            elif "M12 rename: " in msg.text:
+                string = msg.text.replace("M12 rename: ","")
                 if len(string.decode('utf-8')) <= 20:
                     profile_B = kn.getProfile()
                     profile_B.displayName = string
                     kn.updateProfile(profile_B)
                     kn.sendText(msg.to,"Name " + string + " Done Bosqu")
-            elif "P13 rename: " in msg.text:
-                string = msg.text.replace("P13 rename: ","")
+            elif "M13 rename: " in msg.text:
+                string = msg.text.replace("M13 rename: ","")
                 if len(string.decode('utf-8')) <= 20:
                     profile_B = ko.getProfile()
                     profile_B.displayName = string
                     ko.updateProfile(profile_B)
                     ko.sendText(msg.to,"Name " + string + " Done Bosqu")
-            elif "P14 rename: " in msg.text:
-                string = msg.text.replace("P14 rename: ","")
+            elif "M14 rename: " in msg.text:
+                string = msg.text.replace("M14 rename: ","")
                 if len(string.decode('utf-8')) <= 20:
                     profile_B = kp.getProfile()
                     profile_B.displayName = string
                     kp.updateProfile(profile_B)
                     kp.sendText(msg.to,"Name " + string + " Done Bosqu")
-            elif "P15 rename: " in msg.text:
-                string = msg.text.replace("P15 rename: ","")
+            elif "M15 rename: " in msg.text:
+                string = msg.text.replace("M15 rename: ","")
                 if len(string.decode('utf-8')) <= 20:
                     profile_B = kq.getProfile()
                     profile_B.displayName = string
                     kq.updateProfile(profile_B)
                     kq.sendText(msg.to,"Name " + string + " Done Bosqu")
-            elif "P16 rename: " in msg.text:
-                string = msg.text.replace("P16 rename: ","")
+            elif "M16 rename: " in msg.text:
+                string = msg.text.replace("M16 rename: ","")
                 if len(string.decode('utf-8')) <= 20:
                     profile_B = kr.getProfile()
                     profile_B.displayName = string
                     kr.updateProfile(profile_B)
                     kr.sendText(msg.to,"Name " + string + " Done Bosqu")
-            elif "P17 rename: " in msg.text:
-                string = msg.text.replace("P17 rename: ","")
+            elif "M17 rename: " in msg.text:
+                string = msg.text.replace("M17 rename: ","")
                 if len(string.decode('utf-8')) <= 20:
                     profile_B = ks.getProfile()
                     profile_B.displayName = string
                     ks.updateProfile(profile_B)
                     ks.sendText(msg.to,"Name " + string + " Done Bosqu")
-            elif "P18 rename: " in msg.text:
-                string = msg.text.replace("P18 rename: ","")
+            elif "M18 rename: " in msg.text:
+                string = msg.text.replace("M18 rename: ","")
                 if len(string.decode('utf-8')) <= 20:
                     profile_B = kt.getProfile()
                     profile_B.displayName = string
@@ -3929,7 +3916,7 @@ http://line.me/ti/p/09T2waRE7l
 
             elif msg.text in ["Sett","Set"]:
                 print "Setting pick up..."
-                md = "✯= ꧁ 🐯हईທຮຮๅજईह🐯 ꧂=✯\n\n"
+                md = " ✯͜͡C͜͡r͜͡e͜͡a͜͡t͜͡o͜͡r✯͜͡$͜͡ë͜͡I͜͡F͜͡-͜͡฿͜͡o͜͡Ŧ✯ \n နับთิஏთั้ଏบਹທ Sirichan V⒑ \n https://line.me/R/ti/p/%40uvh1233u \n"
                 if wait["likeOn"] == True: md+="􀜁􀇔􏿿 Auto like : on 􀜁􀄯􏿿\n"
                 else:md+="􀜁􀇔􏿿 Auto like : off 􀜁􀄰􏿿\n"
 #                if wait["copy"] == True: md+="�� Mimic : on\n"
@@ -4350,8 +4337,8 @@ http://line.me/ti/p/09T2waRE7l
                 kt.sendText(msg.to, "%sseconds" % (elapsed_time))    
                 print "[Command]Speed palsu executed"
 
-            elif msg.text in ["Keyy"]:
-                cl.sendText(msg.to, "[SELFBOT PHET HACK BOT]\n\n❂͜͡☆➣ Namelock on\n❂͜͡☆➣ Namelock off\n❂͜͡☆➣ Blockinvite on\n❂͜͡☆➣ Blockinvite off\n❂͜͡☆➣ Backup on\n❂͜͡☆➣ Backup off\n\n[By.เพชร ทีมทดลองบอท]")
+            elif msg.text in ["Key"]:
+                cl.sendText(msg.to, "[COMMEND PROTECT]\n\n❂͜͡☆➣ Namelock on\n❂͜͡☆➣ Namelock off\n❂͜͡☆➣ Blockinvite on\n❂͜͡☆➣ Blockinvite off\n❂͜͡☆➣ Backup on\n❂͜͡☆➣ Backup off\n\n[By.ѕєʟғвот[ᴍ̶̲̅ᴀ̶̲̅ɴ̶̲̅]κɪcκєʀ]")
 
 #========================================
             elif msg.text in ["Botbb"]:
