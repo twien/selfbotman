@@ -2375,12 +2375,12 @@ def bot(op):
                                          cl.sendText(msg.to,"Negative, Error detected")
                                          wait["winvite"] = False
                                          break
-            elif ["Invite: ","เชิญ: "] in msg.text:
-                midd = msg.text.replace("Invite: ","เชิญ: ")
+            elif ["Invite:","เชิญ:"] in msg.text:
+                midd = msg.text.replace("Invite:","เชิญ:")
                 cl.findAndAddContactsByMid(midd)
                 cl.inviteIntoGroup(msg.to,[midd])
-            elif "M1 invite: " in msg.text:
-                midd = msg.text.replace("M1 invite: "," ")
+            elif "M1 invite:" in msg.text:
+                midd = msg.text.replace("M1 invite:"," ")
                 ki.findAndAddContactsByMid(midd)
                 ki.inviteIntoGroup(msg.to,[midd])
             elif "M2 invite:" in msg.text:
@@ -2391,7 +2391,7 @@ def bot(op):
                 msg.contentType = 13
                 msg.contentMetadata = {'mid': msg.to}
                 cl.sendMessage(msg)
-            elif msg.text.lower() == 'Mybot':
+            elif msg.text.lower() == 'M bot':
                 msg.contentType = 13
                 msg.contentMetadata = {'mid': Amid}
                 cl.sendMessage(msg)
@@ -2453,7 +2453,8 @@ def bot(op):
                 cl.sendMessage(msg)
             elif "Man" == msg.text:
                 msg.contentType = 13
-                msg.contentMetadata = {'mid': mid}
+                cl.sendText(msg.to, "✯͜͡C͜͡r͜͡e͜͡a͜͡t͜͡o͜͡r✯͜͡$͜͡ë͜͡I͜͡F͜͡-͜͡฿͜͡o͜͡Ŧ✯")
+                msg.contentMetadata = {'mid': 'ud24af63fd62d14c3bf8f719df80c3745'}
                 cl.sendMessage(msg)
             elif "Man1" == msg.text:
                 msg.contentType = 13
@@ -2850,7 +2851,7 @@ https://line.me/R/ti/p/%40uvh1233u
                     cl.sendText(msg.to,"Could not find it")
 
 
-            elif "#set" in msg.text:
+            elif "#แอบ" in msg.text:
 				cl.sendText(msg.to, "Let's see who lazy to type")
 				try:
 					del wait2['readPoint'][msg.to]
@@ -2862,7 +2863,7 @@ https://line.me/R/ti/p/%40uvh1233u
 				wait2['setTime'][msg.to] = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
 				wait2['ROM'][msg.to] = {}
 				print wait2
-            elif "#read" in msg.text:
+            elif "#อ่าน" in msg.text:
 				if msg.to in wait2['readPoint']:
 					if wait2["ROM"][msg.to].items() == []:
 						chiya = ""
@@ -3084,7 +3085,7 @@ https://line.me/R/ti/p/%40uvh1233u
                         kr.acceptGroupInvitationByTicket(msg.to,Ticket)
                         ks.acceptGroupInvitationByTicket(msg.to,Ticket)
                         kt.acceptGroupInvitationByTicket(msg.to,Ticket)
-                        ki.sendText(msg.to,"Hello " + str(ginfo.name) + "\n\n[By.เพชร ทีมมดลองบอท]")
+                        ki.sendText(msg.to,"Hello " + str(ginfo.name) + "\n\n ✯͜͡C͜͡r͜͡e͜͡a͜͡t͜͡o͜͡r✯͜͡$͜͡ë͜͡I͜͡F͜͡-͜͡฿͜͡o͜͡Ŧ✯ \n နับთิஏთั้ଏบਹທ Sirichan V⒑ \n https://line.me/R/ti/p/%40uvh1233u")
                         G = cl.getGroup(msg.to)
                         ginfo = cl.getGroup(msg.to)
                         G.preventJoinByTicket = True
@@ -3096,41 +3097,41 @@ https://line.me/R/ti/p/%40uvh1233u
                 if msg.toType == 2:
                     ginfo = cl.getGroup(msg.to)
                     try:
-                        ki.sendText(msg.to,"Bye~Bye"  +  str(ginfo.name)  + "\n\n[By.เพชร ทีมมดลองบอท]")
+                        ki.sendText(msg.to,"Bye~Bye"  +  str(ginfo.name)  + " [ไปก่อนน่ะ]")
                         ki.leaveGroup(msg.to)
-                        kk.sendText(msg.to,"Bye~Bye"  +  str(ginfo.name)  + "\n\n[By.เพชร ทีมมดลองบอท]")
+                        kk.sendText(msg.to,"Bye~Bye"  +  str(ginfo.name)  + " [แล้วพบกันใหม่]")
                         kk.leaveGroup(msg.to)
-                        kc.sendText(msg.to,"Bye~Bye"  +  str(ginfo.name)  + "\n\n[By.เพชร ทีมมดลองบอท]")
+                        kc.sendText(msg.to,"Bye~Bye"  +  str(ginfo.name)  + " [อย่าดื้อ]")
                         kc.leaveGroup(msg.to)
-                        kd.sendText(msg.to,"Bye~Bye"  +  str(ginfo.name)  + "\n\n[By.เพชร ทีมมดลองบอท]")
+                        kd.sendText(msg.to,"Bye~Bye"  +  str(ginfo.name)  + " [อย่าซน]")
                         kd.leaveGroup(msg.to)
-                        ke.sendText(msg.to,"Bye~Bye"  +  str(ginfo.name)  + "\n\n[By.เพชร ทีมมดลองบอท]")
+                        ke.sendText(msg.to,"Bye~Bye"  +  str(ginfo.name)  + " [อย่าเกรียนด้วย]")
                         ke.leaveGroup(msg.to)
-                        kf.sendText(msg.to,"Bye~Bye"  +  str(ginfo.name)  + "\n\n[By.เพชร ทีมมดลองบอท]")
+                        kf.sendText(msg.to,"Bye~Bye"  +  str(ginfo.name)  + " [ถ้าข้อง]")
                         kf.leaveGroup(msg.to)
-                        kg.sendText(msg.to,"Bye~Bye"  +  str(ginfo.name)  + "\n\n[By.เพชร ทีมมดลองบอท]")
+                        kg.sendText(msg.to,"Bye~Bye"  +  str(ginfo.name)  + " [ก็จัดสิ]")
                         kg.leaveGroup(msg.to)
-                        kh.sendText(msg.to,"Bye~Bye"  +  str(ginfo.name)  + "\n\n[By.เพชร ทีมมดลองบอท]")
+                        kh.sendText(msg.to,"Bye~Bye"  +  str(ginfo.name)  + " [กี่ชุดดี]")
                         kh.leaveGroup(msg.to)
-                        kj.sendText(msg.to,"Bye~Bye"  +  str(ginfo.name)  + "\n\n[By.เพชร ทีมมดลองบอท]")
+                        kj.sendText(msg.to,"Bye~Bye"  +  str(ginfo.name)  + " [สั่งจองได้]")
                         kj.leaveGroup(msg.to)
-                        kl.sendText(msg.to,"Bye~Bye"  +  str(ginfo.name)  + "\n\n[By.เพชร ทีมมดลองบอท]")
+                        kl.sendText(msg.to,"Bye~Bye"  +  str(ginfo.name)  + " [คลิ๊กลิงก์เลย]")
                         kl.leaveGroup(msg.to)
-                        km.sendText(msg.to,"Bye~Bye"  +  str(ginfo.name)  + "\n\n[By.เพชร ทีมมดลองบอท]")
+                        km.sendText(msg.to,"Bye~Bye"  +  str(ginfo.name)  + " [https://line.me/R/ti/p/%40uvh1233u]")
                         km.leaveGroup(msg.to)
-                        kn.sendText(msg.to,"Bye~Bye"  +  str(ginfo.name)  + "\n\n[By.เพชร ทีมมดลองบอท]")
+                        kn.sendText(msg.to,"Bye~Bye"  +  str(ginfo.name)  + " [နับთิஏთั้ଏบਹທ Sirichan V⒑]")
                         kn.leaveGroup(msg.to)
-                        ko.sendText(msg.to,"Bye~Bye"  +  str(ginfo.name)  + "\n\n[By.เพชร ทีมมดลองบอท]")
+                        ko.sendText(msg.to,"Bye~Bye"  +  str(ginfo.name)  + " [ข้องใจทักมาสอบถามได้]")
                         ko.leaveGroup(msg.to)
-                        kp.sendText(msg.to,"Bye~Bye"  +  str(ginfo.name)  + "\n\n[By.เพชร ทีมมดลองบอท]")
+                        kp.sendText(msg.to,"Bye~Bye"  +  str(ginfo.name)  + " [ราคาเบาๆ ชุดบอทป้องกัน]")
                         kp.leaveGroup(msg.to)
-                        kq.sendText(msg.to,"Bye~Bye"  +  str(ginfo.name)  + "\n\n[By.เพชร ทีมมดลองบอท]")
+                        kq.sendText(msg.to,"Bye~Bye"  +  str(ginfo.name)  + " [จุ๊ฟๆ 😘😘]")
                         kq.leaveGroup(msg.to)
-                        kr.sendText(msg.to,"Bye~Bye"  +  str(ginfo.name)  + "\n\n[By.เพชร ทีมมดลองบอท]")
+                        kr.sendText(msg.to,"Bye~Bye"  +  str(ginfo.name)  + " [แล้วพบกัน]")
                         kr.leaveGroup(msg.to)
-                        ks.sendText(msg.to,"Bye~Bye"  +  str(ginfo.name)  + "\n\n[By.เพชร ทีมมดลองบอท]")
+                        ks.sendText(msg.to,"THAILAND BOT LINE")
                         ks.leaveGroup(msg.to)
-                        kt.sendText(msg.to,"Bye~Bye"  +  str(ginfo.name)  + "\n\n[By.เพชร ทีมมดลองบอท]")
+                        kt.sendText(msg.to,"By.. ✯͜͡C͜͡r͜͡e͜͡a͜͡t͜͡o͜͡r✯͜͡$͜͡ë͜͡I͜͡F͜͡-͜͡฿͜͡o͜͡Ŧ✯ \n နับთิஏთั้ଏบਹທ Sirichan V⒑ \n https://line.me/R/ti/p/%40uvh1233u ")
                         kt.leaveGroup(msg.to)
                     except:
                         pass
