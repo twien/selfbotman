@@ -47,71 +47,72 @@ kj.login(token="ใส่โทเค็น")
 kj.loginResult()
 
 kl = LINETCR.LINE()
-kl.login(token="EmZIg1lDmOYH949Rleec.1eIE4tCE1Xqdg7QPWuMPVa.HmOVfbbTn7nX4EW7pZQvDZpLTcjGuV45f/4Bk)
+kl.login(token="ใส่โทเค็น")
 kl.loginResult()
 
 km = LINETCR.LINE()
-km.login(token="Em74tzXHsIM42LE0rhH8.H/2+dXDF6mXvxwjFFKFrsa.Z2JMGYOrrIfcV0woXziwkzmgdBDdfKqdg/z5)
+km.login(token="ใส่โทเค็น")
 km.loginResult()
 
 kn = LINETCR.LINE()
-kn.login(token="EmHmcfpTKmJFpYoC4Htf.X84wLwnCQjJbsPF0Ghq1dW.bprZcr45aNGe2nOaW8Z47Yw9EzrOnJC70zq3go)
+kn.login(token="ใส่โทเค็น")
 kn.loginResult()
 
 ko = LINETCR.LINE()
-ko.login(token="EmoQHRSpSbfnD7vacBr4.dT3xRe4uCjM6Vzg7k5eETa.DEUe9kBAv+SdKGb1yi42OpyVGd4iIMYVr830)
+ko.login(token="ใส่โทเค็น")
 ko.loginResult()
 
 kp = LINETCR.LINE()
-kp.login(token="EmY8h36sYp8BzU6Icfh6.JdC4ALO58MA6pnJuI1CFzG.j7akOD4/Tmc20VlSpIwGmK2y7kUhbG9DEdKk)
+kp.login(token="ใส่โทเค็น")
 kp.loginResult()
 
 kq = LINETCR.LINE()
-kq.login(token="EmbhD4BxvTwdkVFsFhb5.T6aQj64lnmQ+piddBWaZzq.5pVyPq9iNl7ncTZlynv/kOL2Q484vhTH3akP)
+kq.login(token="ใส่โทเค็น")
 kq.loginResult()
 
 kr = LINETCR.LINE()
-kr.login(token="Em1pldxYFW1KLLG1NfH1.7xu87tgEhnTXf8s1fWeH4q.hU6PsL1On8Dh+gT6pUmf/5X6c2lnaNiFiRA0V)
+kr.login(token="ใส่โทเค็น")
 kr.loginResult()
 
 ks = LINETCR.LINE()
-ks.login(token="Em5CpuXREc9uw9FsZTD8.0SD7v1JpFHS4lNELlxT2wa.cFVfqAc6EJYdGB4hiqy8Q9Z+Cc7p8GANGKU)
+ks.login(token="ใส่โทเค็น")
 ks.loginResult()
 
 kt = LINETCR.LINE()
-kt.login(token="EmRMSp9YRsRZEgnvrdW8.XjzOOkSRnvOPOjv8Ex6E6a.YnZQ3FtR6E62qfVLEZUF34hxraDKTWDFNun)
+kt.login(token="ใส่โทเค็น")
 kt.loginResult()
 
 print "login success"
 reload(sys)
 sys.setdefaultencoding('utf-8')
-helpMessage =""" ====[Self Bots PHET HECK BOT]====
-
-              ༺•㏒ ᴳᵘ ᵀᵃʳ ᴾʰᵉᵗ ㏒•༻
-
+helpMessage ="""[ᴍ̶̲̅ᴀ̶̲̅ɴ̶̲̅]
+        ✯✯❇Thailand❇✯✯
+  ✯❇͜͡C͜͡r͜͡e͜͡a͜͡t͜͡o͜͡r✯͜͡$͜͡ë͜͡I͜͡F͜͡-͜͡฿͜͡o͜͡Ŧ❇✯
+http://line.me/ti/p/~1ove..neverdie
 ❂͜͡☆➣ Me
 ❂͜͡☆➣ Id
 ❂͜͡☆➣ Mid
 ❂͜͡☆➣ Gift
+❂͜͡☆➣ Me @
 ❂͜͡☆➣ Mid @
 ❂͜͡☆➣ Cn: Display Name
 ❂͜͡☆➣ Cc: Clock Name
 ❂͜͡☆➣ Mc:
-❂͜͡☆➣ Tl: text
+❂͜͡☆➣ Tl: 'text'
 ❂͜͡☆➣ Auto join: on/off
 ❂͜͡☆➣ Auto add: on/off
 ❂͜͡☆➣ Auto leave: on/off
 ❂͜͡☆➣ Clock: on/off
-❂͜͡☆➣ Share on
+❂͜͡☆➣ Share on/off
 ❂͜͡☆➣ Add message: text
-❂͜͡☆➣ Message:
+❂͜͡☆➣ Message: text
 ❂͜͡☆➣ Add comment: text
-❂͜͡☆➣ Comment: 
+❂͜͡☆➣ Comment: text
 ❂͜͡☆➣ Cbroadcast text
 ❂͜͡☆➣ Gbroadcast text
-❂͜͡☆➣ Reject
+❂͜͡☆➣ Reject  ล้างรัน/ลบรัน
 
-       ༺•㏒ Instruction Room ㏒•༻
+●[C̶̲̅ᴏ̶̲̅ᴍ̶̲̅ᴍ̶̲̅ᴀ̶̲̅ɴ̶̲̅ᴅ̶̲̅] ☛In GROUP
 
 ❂͜͡☆➣ Creator
 ❂͜͡☆➣ Gn: text
@@ -143,48 +144,47 @@ helpMessage =""" ====[Self Bots PHET HECK BOT]====
 ❂͜͡☆➣ Clear ban
 ❂͜͡☆➣ Kill
 ❂͜͡☆➣ Kill ban
-❂͜͡☆➣ Speed
-❂͜͡☆➣ Ambilin @ Steal dp target
-❂͜͡☆➣ Sampul @ Steal cover target
-❂͜͡☆➣ Copy @ All bot copy target
-❂͜͡☆➣ Mycopy @ Copy target profile
+❂͜͡☆➣ Speed/Sp
+❂͜͡☆➣ Ambilin @ Steal dp
+❂͜͡☆➣ Sampul @ Steal cover
+❂͜͡☆➣ Copy @ All bot copy
+❂͜͡☆➣ Mycopy @ Copy profile
 ❂͜͡☆➣ Keluar @ target
-❂͜͡☆➣ music
+❂͜͡☆➣ Music
 ❂͜͡☆➣ .reboot
 ❂͜͡☆➣ Wikipedia
 ❂͜͡☆➣ Cleanse
-❂͜͡☆➣ Pbot
+❂͜͡☆➣ Man bot
 ❂͜͡☆➣ Pcancel
-❂͜͡☆➣ P1-P18 Contact Bot
-❂͜͡☆➣ P1-P2 tl:
-❂͜͡☆➣ P1-P2 say
-❂͜͡☆➣ P1-P2 tag
-❂͜͡☆➣ P1-P2 invite:
-❂͜͡☆➣ P1-P3 mid
-❂͜͡☆➣ P1-P2 gurl
-❂͜͡☆➣ P1-P5 gift
-❂͜͡☆➣ P1-P18 rename:
+❂͜͡☆➣ M1-M18 Contact Bot
+❂͜͡☆➣ M1-M2 tl:
+❂͜͡☆➣ M1-M2 say
+❂͜͡☆➣ M1-M2 tag
+❂͜͡☆➣ M1-M2 invite:
+❂͜͡☆➣ M1-M3 mid
+❂͜͡☆➣ M1-M2 gurl
+❂͜͡☆➣ M1-M5 gift
+❂͜͡☆➣ M1-M18 rename:
 ❂͜͡☆➣ All: rename all:
 ❂͜͡☆➣ Allbio: Isi bio:
-❂͜͡☆➣ P1-P18 rgroup
-❂͜͡☆➣ P1-P5 join
-❂͜͡☆➣ P1-P5 bye
-❂͜͡☆➣ P1-P5 link on/off
+❂͜͡☆➣ M1-M18 rgroup
+❂͜͡☆➣ M1-M5 join
+❂͜͡☆➣ M1-M5 bye
+❂͜͡☆➣ M1-M5 link on/off
 
-     ༺•㏒ COMMAND Protect ㏒•༻
+●[C̶̲̅ᴏ̶̲̅ᴍ̶̲̅ᴍ̶̲̅ᴀ̶̲̅ɴ̶̲̅ᴅ̶̲̅] ☛ PROTECT
 
 ❂͜͡☆➣ Qr on/off
 ❂͜͡☆➣ Backup on/off
 ❂͜͡☆➣ Protect On/off
 ❂͜͡☆➣ Namelock On/off
 
-        
-  
-     ☆ Ķ͈̤̱͎̱̤̞̭͂̐͒́̀͗͞Ị̵̻̝̘͍͛̏̃͊̉͠ T̩͖͎̹̫͈̿̆̏́̑́S̤̲̯̤̹̲̲̘̏̋̈́̿͒ͅŲ̶̼̲̺̣̬̔̿͐̾̾͘Ṇ̶̨̛̲̭̝̲̝̪̎̾̈́͘͢͜͞É͎̱̺̜̐̀̿͘̕̕͢  B̴̡̛͈̖̺͖̙̝̩̞̐̂̀͂̏̚͟͠O̸̡̩̣̲̣̜̊̑̾̾͊̃͘͜ͅT Ç̵͔̟̫̰̮̺̟̥̂̋̂͋͐͛͑̔̚̚O̷̧̺̠̰̳̿́͆̕̕͠ͅ N̶͖̜̻̰͍̮̼̒́̐̑͒́̕ͅŢ̢̯̱͕̠͙̤̙̄̂͗̊̈́̕R̶̛̙̩̱̗̯͌̈͆̆Ơ̴̡͈̖̺͖̙̝̩̞̐̂̀͂̏̚͟͠L̸̡̩̣̲̣̜̊̑̾̾͊̃͘͜ͅ  ☆
-
-
-[By.❦〖Pђëŧ〗☞ᵀËÄMທஇລ❂قB❂T✓]
-
+➖➖➖➖➖➖➖➖➖➖➖➖➖➖
+สนใจติดต่อที่.. ѕєʟғвот[ᴍ̶̲̅ᴀ̶̲̅ɴ̶̲̅]κɪcκєʀ
+http://line.me/ti/p/~1ove..neverdie
+ နับთิஏთั้ଏบਹທ Sirichan V⒑
+https://line.me/R/ti/p/%40uvh1233u
+➖➖➖➖➖➖➖➖➖➖➖➖➖➖
 """
 helpMessage2 ="""╔════════════════╗
 ║〘ᏢᏌᏴᏞᏆᏟ ᏟᎾᎷᎷᎪNᎠ〙
