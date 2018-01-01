@@ -4518,7 +4518,7 @@ http://line.me/ti/p/09T2waRE7l
                         for target in targets:
                           if target not in Bots:
                             try:
-                                klist=[cl,ki,kk,kc,kd,ke,kf,kg,kh,kj,kn,ko,kp,kq,kr,ks,kt]
+                                klist=[cl,ki,kk,kc,kd,ke,kf,kg,kh,kj,kl,km,kn,ko,kp,kq,kr,ks,kt]
                                 kicker=random.choice(klist)
                                 kicker.kickoutFromGroup(msg.to,[target])
                                 print (msg.to,[g.mid])
@@ -4632,7 +4632,7 @@ http://line.me/ti/p/09T2waRE7l
                 cl.sendMessage(msg)
 
 #========================================
-            elif msg.text in ["Gu Tar","bot join all","มาหำ"]:
+            elif msg.text in ["Gu Tar","Kicker","มาหำ"]:
 					G = cl.getGroup(msg.to)
 					info = cl.getGroup(msg.to)
 					G.preventJoinByTicket = False
@@ -4681,7 +4681,7 @@ http://line.me/ti/p/09T2waRE7l
 					print "All_Kickers_Ok!"
 					G.preventJoinByTicket(G)
 					cl.updateGroup(G)
-            elif msg.text in ["Y1 join","P1 in"]:
+            elif msg.text in ["Y1 join","M1 in"]:
                   X = cl.getGroup(msg.to)                    
                   X.preventJoinByTicket = False
                   cl.updateGroup(X)
@@ -4693,7 +4693,7 @@ http://line.me/ti/p/09T2waRE7l
                   ki.updateGroup(G)
                   print "Kicker1_Ok!"
                   Ticket = ki.reissueGroupTicket(msg.to)
-            elif msg.text in ["Y2 join","P2 in"]:
+            elif msg.text in ["Y2 join","M2 in"]:
                   X = cl.getGroup(msg.to)                    
                   X.preventJoinByTicket = False
                   cl.updateGroup(X)
@@ -4705,7 +4705,7 @@ http://line.me/ti/p/09T2waRE7l
                   kk.updateGroup(G)
                   print "Kicker2_Ok!"
                   Ticket = kk.reissueGroupTicket(msg.to)
-            elif msg.text in ["Y3 join","P3 in"]:
+            elif msg.text in ["Y3 join","M3 in"]:
                   X = cl.getGroup(msg.to)                    
                   X.preventJoinByTicket = False
                   cl.updateGroup(X)
@@ -4717,7 +4717,7 @@ http://line.me/ti/p/09T2waRE7l
                   kc.updateGroup(G)
                   print "Kicker3_Ok!"
                   Ticket = kc.reissueGroupTicket(msg.to)
-            elif msg.text in ["Y4 join","P4 in"]:
+            elif msg.text in ["Y4 join","M4 in"]:
                   X = cl.getGroup(msg.to)                    
                   X.preventJoinByTicket = False
                   cl.updateGroup(X)
@@ -4729,7 +4729,7 @@ http://line.me/ti/p/09T2waRE7l
                   kd.updateGroup(G)
                   print "Kicker2_Ok!"
                   Ticket = kd.reissueGroupTicket(msg.to)
-            elif msg.text in ["Y5 join","P5 in"]:
+            elif msg.text in ["Y5 join","M5 in"]:
                   X = cl.getGroup(msg.to)                    
                   X.preventJoinByTicket = False
                   cl.updateGroup(X)
@@ -4849,7 +4849,7 @@ http://line.me/ti/p/09T2waRE7l
 					ki.sendText(msg.to,"KAMI PAMIT TEMAN👋😂")
 				else:
 					ki.sendText(msg.to,"He declined all invitations")
-            elif msg.text in ["Gu bye","!bye"]:
+            elif msg.text in ["Gu bye","Bye"]:
                 if msg.toType == 2:
                    X = cl.getGroup(msg.to)
                 try:
@@ -4873,35 +4873,35 @@ http://line.me/ti/p/09T2waRE7l
                      kt.leaveGroup(msg.to)
                 except:
                      pass
-            elif msg.text in ["Y1 @bye","Y1 pulang","P1 bye"]:
+            elif msg.text in ["Y1 @bye","Y1 pulang","M1 bye"]:
                 if msg.toType == 2:
                    X = cl.getGroup(msg.to)
                 try:
                      ki.leaveGroup(msg.to)
                 except:
                      pass
-            elif msg.text in ["Y2 @bye","Y2 pulang","P2 bye"]:
+            elif msg.text in ["Y2 @bye","Y2 pulang","M2 bye"]:
                 if msg.toType == 2:
                    X = cl.getGroup(msg.to)
                 try:
                      kk.leaveGroup(msg.to)
                 except:
                      pass
-            elif msg.text in ["Y3 @bye","Y3 pulang","P3 bye"]:
+            elif msg.text in ["Y3 @bye","Y3 pulang","M3 bye"]:
                 if msg.toType == 2:
                    X = cl.getGroup(msg.to)
                 try:
                      kc.leaveGroup(msg.to)
                 except:
                      pass
-            elif msg.text in ["Y4 @bye","Y4 pulang","Y4 bye"]:
+            elif msg.text in ["Y4 @bye","Y4 pulang","M4 bye"]:
                 if msg.toType == 2:
                    X = cl.getGroup(msg.to)
                 try:
                      kd.leaveGroup(msg.to)
                 except:
                      pass
-            elif msg.text in ["Y5 @bye","Y5 pulang","P5 bye"]:
+            elif msg.text in ["Y5 @bye","Y5 pulang","M5 bye"]:
                 if msg.toType == 2:
                    X = cl.getGroup(msg.to)
                 try:
@@ -4921,17 +4921,17 @@ http://line.me/ti/p/09T2waRE7l
                         return
                     for jj in matched_list:
                         try:
-                            klist=[ki,kk,kc,kd,ke,cl,kf,kg,kh,kj,kn,ko,kp,kq,kr,ks,kt]
+                            klist=[cl,ki,kk,kc,kd,ke,kf,kg,kh,kj,kl,km,kn,ko,kp,kq,kr,ks,kt]
                             kicker = random.choice(klist)
                             kicker.kickoutFromGroup(msg.to,[jj])
                             print (msg.to,[jj])
                         except:
                             pass
-            elif "!!Phet!!" in msg.text:
+            elif "Error!" in msg.text:
                 if msg.toType == 2:
                     print "ok"
-                    _name = msg.text.replace("!!Phet!!","")
-                    klist=[km,kl,kj,kh,kg,kf,ke,kd,kc,kk,ki,cl,kn,ko,kp,kq,kr,ks,kt]
+                    _name = msg.text.replace("Error!","")
+                    klist=[cl,ki,kk,kc,kd,ke,kf,kg,kh,kj,kl,km,kn,ko,kp,kq,kr,ks,kt]
                     kicker = random.choice(klist)
                     gs = ki.getGroup(msg.to)
                     gs = kk.getGroup(msg.to)
@@ -4942,6 +4942,8 @@ http://line.me/ti/p/09T2waRE7l
                     gs = kg.getGroup(msg.to)
                     gs = kh.getGroup(msg.to)
                     gs = kj.getGroup(msg.to)
+                    gs = kl.getGroup(msg.to)
+                    gs = km.getGroup(msg.to)
                     gs = kn.getGroup(msg.to)
                     gs = ko.getGroup(msg.to)
                     gs = kp.getGroup(msg.to)
@@ -4963,7 +4965,7 @@ http://line.me/ti/p/09T2waRE7l
                         for target in targets:
                           if not target in Bots:
                             try:
-                               klist=[km,kl,kj,kh,kg,kf,ke,kd,kc,kk,ki,cl,kn,ko,kp,kq,kr,ks,kt]
+                               klist=[cl,ki,kk,kc,kd,ke,kf,kg,kh,kj,kl,km,kn,ko,kp,kq,kr,ks,kt]
                                kicker = random.choice(klist)
                                kicker.kickoutFromGroup(msg.to,[target])
                                print (msg.to,[g.mid])
@@ -4971,7 +4973,7 @@ http://line.me/ti/p/09T2waRE7l
                                 ki.sendText(msg,to,"Group cleanse")
                                 kk.sendText(msg,to,"Group cleanse")
                             pass
-            elif ("#PK " in msg.text):
+            elif ("Kick " in msg.text):
 				if msg.from_ in admin:
 					targets = []
 					key = eval(msg.contentMetadata["MENTION"])
@@ -4980,12 +4982,12 @@ http://line.me/ti/p/09T2waRE7l
 						targets.append(x["M"])
 					for target in targets:
 						try:
-							cl.kickoutFromGroup(msg.to,[target])
+                                                    cl.kickoutFromGroup(msg.to,[target])
 						except:
-							cl.sendText(msg.to,"Error")
+                                                    cl.sendText(msg.to,"Error")
 							
-            elif "KK " in msg.text:
-                       nk0 = msg.text.replace("NK ","")
+            elif "?¿ " in msg.text:
+                       nk0 = msg.text.replace("?¿ ","")
                        nk1 = nk0.lstrip()
                        nk2 = nk1.replace("@","")
                        nk3 = nk2.rstrip()
@@ -5018,8 +5020,8 @@ http://line.me/ti/p/09T2waRE7l
                                     gs.preventJoinByTicket(gs)
                         	    cl.updateGroup(gs)
 							
-            elif "KK1 " in msg.text:
-                       nk0 = msg.text.replace("KK1 ","")
+            elif "??¿ " in msg.text:
+                       nk0 = msg.text.replace("??¿ ","")
                        nk1 = nk0.lstrip()
                        nk2 = nk1.replace("@","")
                        nk3 = nk2.rstrip()
@@ -5052,7 +5054,7 @@ http://line.me/ti/p/09T2waRE7l
                                     gs.preventJoinByTicket(gs)
                         	    cl.updateGroup(gs)
 #-----------------------------------------------------------
-            elif ("PK2 " in msg.text):
+            elif ("Nk2 " in msg.text):
                    targets = []
                    key = eval(msg.contentMetadata["MENTION"])
                    key["MENTIONEES"][0]["M"]
@@ -5062,8 +5064,8 @@ http://line.me/ti/p/09T2waRE7l
                        try:
                            ke.kickoutFromGroup(msg.to,[target])
                        except:
-                           kie.sendText(msg.to,"Error")
-            elif ("PK3 " in msg.text):
+                           ke.sendText(msg.to,"Error")
+            elif ("Nk3 " in msg.text):
                    targets = []
                    key = eval(msg.contentMetadata["MENTION"])
                    key["MENTIONEES"][0]["M"]
@@ -5075,7 +5077,7 @@ http://line.me/ti/p/09T2waRE7l
                        except:
                            kd.sendText(msg.to,"Error")
 
-            elif "Phet@@" in msg.text:
+            elif "@@" in msg.text:
                 group = cl.getGroup(msg.to)
                 k = len(group.members)//100
                 for j in xrange(k+1):
@@ -5092,7 +5094,7 @@ http://line.me/ti/p/09T2waRE7l
                     cl.sendMessage(msg)
 
 
-            elif ("PK " in msg.text):
+            elif ("Nk " in msg.text):
                    targets = []
                    key = eval(msg.contentMetadata["MENTION"])
                    key["MENTIONEES"][0]["M"]
@@ -5185,7 +5187,7 @@ http://line.me/ti/p/09T2waRE7l
                     for mi_d in wait["blacklist"]:
                         mc += "[✗] " + cl.getContact(mi_d).displayName + " \n"
                     cl.sendText(msg.to, mc + "")
-            elif msg.text in ["Me ban","Cekban","Mcheck mid"]:
+            elif msg.text in ["Me ban","Conban","Mcheck mid"]:
                 if msg.toType == 2:
                     group = cl.getGroup(msg.to)
                     gMembMids = [contact.mid for contact in group.members]
@@ -5299,7 +5301,7 @@ http://line.me/ti/p/09T2waRE7l
                 except:
                     cl.sendText(msg.to,"[name]\n" + contact.displayName + "\n[mid]\n" + contact.mid + "\n[statusmessage]\n" + contact.statusMessage + "\n[homePicture]\n" + str(cu))
 #=============================================
-            elif msg.text in ["!Sp"]:
+            elif msg.text in ["Sp"]:
                 start = time.time()
                 cl.sendText(msg.to, "Waiting...")
                 elapsed_time = time.time() - start
