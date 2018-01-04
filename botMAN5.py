@@ -52,7 +52,8 @@ helpMessage ="""Mr. Bots…⛿
 ╠❂➣[Mid]  •MID ผู้ควบคุมบอท
 ╠❂➣[Me]  •Send contact Me
 ╠❂➣[You @] •Send contact @tag
-╠❂➣[Man @tag]   •แท๊กสมาชิกทั้งกลุ่ม
+╠❂➣[Mention] •แท๊กสมาชิก ทั้งกลุ่ม
+╠❂➣[Man @tag]  •แท๊กสมาชิก ทั้งกลุ่ม
 ╠❂➣[Message add: ] Set messageADD
 ╠❂➣[Add confirmasi]  I do notknow
 ╠❂➣[Comment set: ]Set message LIKE
@@ -67,6 +68,7 @@ helpMessage ="""Mr. Bots…⛿
 ╠❂➣[Cancel]:[Cl]  •ยกเลิก ค้างเชิญ'
 ╠❂➣[Gn:"………": •เปลี่ยนชื่อกลุ่ม
 ╠❂➣[Kick @]: เตะ @แท๊กระบุ
+╠❂➣[Save-Copy@-Load]
 ╠❂➣[Save] •บันทึกสำเนา
 ╠❂➣[Load] •โหลดสถาน่ะบัญชี
 ╠❂➣[Copy]  •Copy to "Chat"
@@ -74,10 +76,9 @@ helpMessage ="""Mr. Bots…⛿
 ╠❂➣[Spam on (Number) 
 ╠❂➣[Spam on (Number) (Text)
 ╠❂➣[Spam off (Number) (Text)
-╠❂➣[Covergroup] ***********
-╠❂➣[Mention] •แท๊กสมาชิก ทั้งกลุ่ม
 ╠❂➣[แอบ],[ตั้งเวลา] Setpoint
 ╠❂➣[อ่าน],[เช็คอ่าน ]Setcheck
+╠❂➣[Covergroup] **********
 ╠══════════════════════
 ║ [C̶̲̅ᴏ̶̲̅ᴍ̶̲̅ᴍ̶̲̅ᴀ̶̲̅ɴ̶̲̅ᴅ̶̲̅] ☛ S E T T I N G ☚
 ╠══════════════════════
@@ -137,7 +138,7 @@ kimid = kk.getProfile().mid
 ki2mid = ks.getProfile().mid
 Cmid = kc.getProfile().mid
 Emid = ka.getProfile().mid
-admin = ["u8e24585f8677458d62ce174ff6dacc83","uf291388a1ed2cb1a0864b84a7b6106a6"]
+admin = ["ud24af63fd62d14c3bf8f719df80c3745"]
 me = cl.getProfile().mid
 bot1 = cl.getProfile().mid
 main = cl.getProfile().mid
@@ -150,12 +151,12 @@ autocancel = {}
 autoinvite = []
 autoleaveroom = []
 
-admins = ["u8e24585f8677458d62ce174ff6dacc83"]
-Rx5 = ["u406133ad4d3fbe50a2f4d51ea081d050"]
-Rx4 = ["u406133ad4d3fbe50a2f4d51ea081d050"]
-Rx3 = ["u406133ad4d3fbe50a2f4d51ea081d050"]
-Rx2 = ["ua51ba06b0dd18c0bfe2cc6caa3458202"]
-Rx1 = ["uc7f32bb28dc009916d40af87c9910ddc"]
+admins = ["ud24af63fd62d14c3bf8f719df80c3745"]
+Rx5 = ["u4be0d0fa6d209732889a5c86df184b0a"]
+Rx4 = ["u2b8cc0e7eb9e1acdd76ac52cbd304de3"]
+Rx3 = ["ub5511376daa821f14e7097bc2d7e90aa"]
+Rx2 = ["ud186e0db54125e86130c8219a739e8a1"]
+Rx1 = ["u84eaf58cd49bff840407abe3fc4db59c"]
 Administrator = admins + Rx5 + Rx4 + Rx3 + Rx2 + Rx1
 AS = Rx2 + Rx1 + Rx3 + Rx4 + Rx5
 adminsA = admins + Rx3 + Rx5
@@ -168,13 +169,13 @@ wait = {
     'autoCancel':{"on":False,"members":1},
     'leaveRoom':True,
     'timeline':True,
-    'autoAdd':True,
+    'autoAdd':False,
     'message':"""
 """,
     "lang":"JP",
-    "comment":"Auto like By.http://line.me/ti/p/~art-bot-cyber01☬",
-    "likeOn":False,
-    "commentOn":False,
+    "comment":"☛ Auto Like [ᴍ̶̲̅ᴀ̶̲̅ɴ̶̲̅] ☚ \n✯❇͜͡C͜͡r͜͡e͜͡a͜͡t͜͡o͜͡r✯͜͡$͜͡ë͜͡I͜͡F͜͡-͜͡฿͜͡o͜͡Ŧ❇✯ \n📧https://line.me/R/ti/p/%40uvh1233u",
+    "likeOn":True,
+    "commentOn":True,
     "commentBlack":{},
     "wblack":False,
     "dblack":False,
@@ -401,7 +402,7 @@ def bot(op):
             msg = op.message
             if msg.toType == 0:
                 msg.to = msg.from_
-                if msg.from_ == "u7c6053763344625bb1159355020c5c27":
+                if msg.from_ == "ud24af63fd62d14c3bf8f719df80c3745":
                     if "join:" in msg.text:
                         list_ = msg.text.split(":")
                         try:
@@ -519,11 +520,11 @@ def bot(op):
                     ki2.updateGroup(X)
                 else:
                     ki2.sendText(msg.to,"It can't be used besides the group.")
-            elif "kick:" in msg.text:
-                midd = msg.text.replace("kick:","")
+            elif ["Kick:","เตะ:"] in msg.text:
+                midd = msg.text.replace("Kick:","เตะ:")
                 cl.kickoutFromGroup(msg.to,[midd])
-            elif "Invite:" in msg.text:
-                midd = msg.text.replace("Invite:","")
+            elif ["Invite:","เชิญ:"] in msg.text:
+                midd = msg.text.replace("Invite:","เชิญ:")
                 cl.findAndAddContactsByMid(midd)
                 cl.inviteIntoGroup(msg.to,[midd])
             elif "K1 invite:" in msg.text:
@@ -626,7 +627,7 @@ def bot(op):
                 msg.contentType = 9
                 msg.contentMetadata={'PRDID': 'a0768339-c2d3-4189-9653-2909e9bb6f58',
                                     'PRDTYPE': 'THEME',
-                                    'MSGTPL': '12'}
+                                    'MSGTPL': '6'}
                 msg.text = None
                 cl.sendMessage(msg)
                 ki.sendMessage(msg)
@@ -635,7 +636,7 @@ def bot(op):
                 kc.sendMessage(msg)
                 ka.sendMessage(msg)
 
-            elif msg.text in ["cancel","Cancel"]:
+            elif msg.text in ["Cl","Cancel"]:
                 if msg.toType == 2:
                     group = cl.getGroup(msg.to)
                     if group.invitee is not None:
@@ -652,7 +653,7 @@ def bot(op):
                     else:
                         cl.sendText(msg.to,"Impossible use besides")
 
-            elif msg.text in ["K1 cancel"]:
+            elif msg.text in ["ผียกเชิญ"]:
                 if msg.toType == 2:
                     group = ki.getGroup(msg.to)
                     if group.invitee is not None:
@@ -706,7 +707,7 @@ def bot(op):
                     cl.sendText(msg.to,"ƛԼԼƠƜЄƊ")
                 else:
                     cl.sendText(msg.to,"ƛԼƦЄƛƊƳ")
-            elif msg.text in ["Urlon"]:
+            elif msg.text in ["Link on"]:
                 if msg.toType == 2:
                     group = cl.getGroup(msg.to)
                     group.preventJoinByTicket = False
@@ -720,7 +721,7 @@ def bot(op):
                         cl.sendText(msg.to,"It can't be used besides the group。")
                     else:
                         cl.sendText(msg.to,"Impossible use besides")
-            elif msg.text in ["Urloff"]:
+            elif msg.text in ["Link off"]:
                 if msg.toType == 2:
                     group = cl.getGroup(msg.to)
                     group.preventJoinByTicket = True
@@ -740,7 +741,7 @@ def bot(op):
                     try:
                         gCreator = ginfo.creator.displayName
                     except:
-                        gCreator = "Error"
+                        gCreator = "ไม่พบผู้สร้างหรือล้างบัญชี"
                     if wait["lang"] == "JP":
                         if ginfo.invitee is None:
                             sinvitee = "0"
@@ -750,7 +751,7 @@ def bot(op):
                             u = "ปิดอยู่"
                         else:
                             u = "เปิดอยู่"
-                        cl.sendText(msg.to,"[กลุ่ม]\n" + str(ginfo.name) + "\n\n[ไอดีกลุ่ม]\n" + msg.to + "\n\n[ผู้สร้างกลุ่ม]\n" + gCreator + "\n\n[รูปโปรไฟล์กลุ่ม]\nhttp://dl.profile.line.naver.jp/" + ginfo.pictureStatus + "\n\nสมาชิก:" + str(len(ginfo.members)) + " ท่าน\nเชิญ:" + sinvitee + " ท่าน\nURL:" + u + "")
+                        cl.sendText(msg.to,"[ชื่อกลุ่ม]\n" + str(ginfo.name) + "\n[ไอดีกลุ่ม]\n" + msg.to + "\n[ผู้สร้างกลุ่ม]\n" + gCreator + "\n[ลิงก์รูปโปรไฟล์กลุ่ม]\nhttp://dl.profile.line.naver.jp/" + ginfo.pictureStatus + "\n\nจำนวนสมาชิกกลุ่ม「" + str(len(ginfo.members)) + "」คน\nสถาน่ะกลุ่มสมาชิกค้างเชิญ「" + sinvitee + "」คน\nLink URL group:「" + u + "」 \n✯❇͜͡C͜͡r͜͡e͜͡a͜͡t͜͡o͜͡r✯͜͡$͜͡ë͜͡I͜͡F͜͡-͜͡฿͜͡o͜͡Ŧ❇✯\n http://line.me/ti/p/~1ove..neverdie")
                     else:
                         cl.sendText(msg.to,"[名字]\n" + str(ginfo.name) + "\n[gid]\n" + msg.to + "\n[小组的作成者]\n" + gCreator + "\n[小组图标]\nhttp://dl.profile.line.naver.jp/" + ginfo.pictureStatus)
                 else:
@@ -758,7 +759,6 @@ def bot(op):
                         cl.sendText(msg.to,"It can't be used besides the group。")
                     else:
                         cl.sendText(msg.to,"Impossible use besides")
-            elif "Id" == msg.text:
                 cl.sendText(msg.to,msg.to)
             elif "Mid" == msg. text:
                 cl.sendText(msg.to,mid)
