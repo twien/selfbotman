@@ -314,6 +314,18 @@ def bot(op):
                         cl.kickoutFromGroup(msg.to,[jj])
                     cl.sendText(msg.to,"Blacklist user flushing is complete")
 
+        if op.type == 15:
+            if op.param2 in bot1:
+                return
+            cl.sendText(op.param1,"👋Ɓy℮ Bye ☛" + cl.getContact(op.param2).displayName + "☚ \n\n「REPORT MEMBER LEAVE OUT GROUP」 ⏰" + datetime.today().strftime('%H:%M:%S') )
+            print ("MEMBER HAS LEFT THE GROUP")
+
+        if op.type == 19:
+            if op.param2 in bot1:
+                return
+            cl.sendText(op.param1,cl.getContact(op.param2).displayName + " ☚ 👀 ซัดเต็มข้อเลยครับ👣..ท่านผู้ชม😯 \n\n「ME「MEMBER KICK OUT FORM GROUP」 ⏰" +datetime.today().strftime('%H:%M:%S') )
+            print "MEMBER KICK OUT FORM GROUP"
+
         if op.type == 11:
             if op.param3 == '1':
                 if op.param1 in wait['pname']:
