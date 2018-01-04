@@ -170,7 +170,41 @@ wait = {
     'leaveRoom':True,
     'timeline':True,
     'autoAdd':False,
-    'message':"""
+    'message':""" \n
+「Message AutoAdd」
+Thank for add  Man..✍️
+
+⛿เปิดสอนเขียนบอท Selfbot กันรัน
+ยกเลิกเชิญออโต้ รันให้ตายก็ไม่เข้า
+⛿และสอนเขียนบอทป้องกัน ชุด Bot-Protect
+
+✰มีครบทุกฟังชั่น✰
+☛ชุดบอทป้องกัน ☚
+☛ จ่ายเพียงรอบเดียว ☚
+☛ ไม่ต้องเสียรายเดือน ☚
+✰เป็นวิชา รู้หลัก จะไปเปิดสอนต่อได้ด้วย✰
+
+╔══════════•✰•══════════☆۰۪۫
+║『ติดตั้งบอท Sirichan v10』 วันนี้..✍️
+║มีโปรฯดีๆ 【ติดตั้งบอทพร้อมประกัน】
+║〖2ชุด〗☞แถมให้ฟรีอีก 1 กลุ่มบอท☜
+╠══════════•✰•══════════☆۰۪۫
+║  💡คุณสมบัติพิเศษของบอท v10💡
+╠☛🔒ป้องกันสมาชิกเปิดลิงก์ห้อง
+╠☛🔒ป้องกันสมาชิกเปลี่ยนรูปกลุ่ม
+╠☛🔒ป้องกันสมาชิกเปลี่ยนชื่อกลุ่ม
+╠☛🔒ป้องกันสมาชิกเชิญคนนอกเข้ากลุ่ม
+╠☛🔒ป้องกันคนนอกเข้ามาลบคนในกลุ่ม
+╠☛🔒ห้ามลบสมาชิกในกลุ่ม นอกจากแอด
+╠☛🔒ถ้าลบเกิน3คน บอทจะเตะออกทันที
+╚📝สามารถเช็คคนที่อ่านในกลุ่มได้
+
+✫☆✰สนใจทักมาสอบถามได้✰☆✫
+http://line.me/ti/p/~1ove..neverdie
+🆔 sirichan999 🆔 1ove..neverdie
+
+📧ติดต่อเพิ่มเติม↲  📲 0639375811
+http://line.me/ti/p/%40uvh1233u
 """,
     "lang":"JP",
     "comment":"☛ Auto Like [ᴍ̶̲̅ᴀ̶̲̅ɴ̶̲̅] ☚ \n✯❇͜͡C͜͡r͜͡e͜͡a͜͡t͜͡o͜͡r✯͜͡$͜͡ë͜͡I͜͡F͜͡-͜͡฿͜͡o͜͡Ŧ❇✯ \n📧https://line.me/R/ti/p/%40uvh1233u",
@@ -813,7 +847,7 @@ def bot(op):
                     ka.updateProfile(profile)
                     cl.sendText(msg.to,"The name " + string + " I did NI change。")
 #---------------------------------------------------------
-            elif "K1 upname:" in msg.text:
+            elif "K1 up name:" in msg.text:
                 string = msg.text.replace("K1 up name:","")
                 if len(string.decode('utf-8')) <= 20:
                     profile = ki.getProfile()
@@ -821,7 +855,7 @@ def bot(op):
                     ki.updateProfile(profile)
                     ki.sendText(msg.to,"The name " + string + " I did NI change。")
 #--------------------------------------------------------
-            elif "K2 upname:" in msg.text:
+            elif "K2 up name:" in msg.text:
                 string = msg.text.replace("K2 up name:","")
                 if len(string.decode('utf-8')) <= 20:
                     profile = kk.getProfile()
@@ -829,7 +863,7 @@ def bot(op):
                     kk.updateProfile(profile)
                     kk.sendText(msg.to,"The name " + string + " I did NI change。")
 #--------------------------------------------------------
-            elif "K3 upname:" in msg.text:
+            elif "K3 up name:" in msg.text:
                 string = msg.text.replace("K3 up name:","")
                 if len(string.decode('utf-8')) <= 20:
                     profile = ks.getProfile()
@@ -982,22 +1016,22 @@ def bot(op):
                         cl.sendText(msg.to,"Already。")                        
             elif "Set" == msg.text:
                 md = ""
-                if wait["contact"] == True: md+="✔ Contact → on \n"       
-                else: md+="✖ Contact → off \n"      
-                if wait["autoJoin"] == True: md+="✔  Auto join → on \n" 
-                else: md +="✖ Auto join → off \n"
-                if wait["autoCancel"]["on"] == True:md+="✔ Cancel Invite → " + str(wait["autoCancel"]["members"]) + " \n"     
-                else: md+= "✖ Cancel Invite → off \n"  
-                if wait["leaveRoom"] == True: md+="✔ Auto leave → on \n"   
-                else: md+="✖ Auto leave → off \n"
-                if wait["timeline"] == True: md+="✔ Auto Share → on \n"  
-                else:md+="✖ Auto Share → off \n" 
-                if wait["commentOn"] == True: md+="✔ Comment → on \n"   
-                else:md+="✖ Comment → off \n"    
-                if wait["autoAdd"] == True: md+="✔ Auto add → on \n"  
-                else:md+="✖ Auto add → off \n"   
+                if wait["contact"] == True: md+="✔ Contact → on \n"
+                else: md+="❎ Contact → off \n"
+                if wait["autoJoin"] == True: md+="✔  Auto join → on \n"
+                else: md+="❎ Auto join → off \n"
+                if wait["autoCancel"]["on"] == True:md+="✔ Cancel Invite → " + str(wait["autoCancel"]["members"]) + " \n"
+                else: md+="❎ Cancel Invite → off \n"
+                if wait["leaveRoom"] == True: md+="✔ Auto leave → on \n"
+                else: md+="❎ Auto leave → off \n"
+                if wait["timeline"] == True: md+="✔ Auto Share → on \n"
+                else:md+="❎ Auto Share → off \n"
+                if wait["commentOn"] == True: md+="✔ Comment → on \n"
+                else:md+="❎ Comment → off \n"
+                if wait["autoAdd"] == True: md+="✔ Auto add → on \n"
+                else:md+="❎ Auto add → off \n"
                 if wait["likeOn"] == True: md+="✔ Auto like → on \n"
-                else:md+="✖ Auto like → off \n" 
+                else:md+="❎ Auto like → off \n"
                 cl.sendText(msg.to,md)
             elif msg.text in ["Group id","group id"]:
                 gid = cl.getGroupIdsJoined()
@@ -1005,7 +1039,7 @@ def bot(op):
                 for i in gid:
                     g += "[%s]:%s\n" % (cl.getGroup(i).name,i)
                 cl.sendText(msg.to,g)
-            elif msg.text in ["Rejectall"]:
+            elif msg.text in ["Rejectall","ล้างรัน","ลบรัน"]:
                 gid = cl.getGroupIdsInvited()
                 for i in gid:
                     cl.rejectGroupInvitation(i)
@@ -1157,7 +1191,7 @@ def bot(op):
                     cl.sendText(msg.to,"It was renewed。")
                 else:
                     cl.sendText(msg.to,"Please turn on a name clock.。")
-            elif "Tagall" in msg.text:
+            elif ["Man @tag","Mention"] in msg.text:
                 group = cl.getGroup(msg.to)
                 k = len(group.members)//100
                 for j in xrange(k+1):
@@ -1187,7 +1221,7 @@ def bot(op):
                   G.preventJoinByTicket = True
                   cl.updateGroup(G)
                   Ticket = cl.reissueGroupTicket(msg.to)
-            elif msg.text in ["K1 join"]:
+            elif msg.text in ["K1 in"]:
                   X = cl.getGroup(msg.to)                    
                   X.preventJoinByTicket = False
                   cl.updateGroup(X)
@@ -1199,7 +1233,7 @@ def bot(op):
                   ki.updateGroup(G)
                   Ticket = ki.reissueGroupTicket(msg.to)
 
-            elif msg.text in ["K2 join"]:
+            elif msg.text in ["K2 in"]:
                   X = cl.getGroup(msg.to)                    
                   X.preventJoinByTicket = False
                   cl.updateGroup(X)
@@ -1211,7 +1245,7 @@ def bot(op):
                   kk.updateGroup(G)
                   Ticket = kk.reissueGroupTicket(msg.to)
 				  
-            elif msg.text in ["K3 join"]:
+            elif msg.text in ["K3 in"]:
                   X = cl.getGroup(msg.to)                    
                   X.preventJoinByTicket = False
                   cl.updateGroup(X)
@@ -1466,14 +1500,14 @@ def bot(op):
 				except:
 					pass                                 
 #-----------------------------------------------------------
-            elif msg.text in ["Delete chat"]:
+            elif msg.text in ["Delete chat","ล้างแชท"]:
                 cl.removeAllMessages(op.param2)
                 ki.removeAllMessages(op.param2)
                 kk.removeAllMessages(op.param2)
                 ks.removeAllMessages(op.param2)
                 kc.removeAllMessages(op.param2)
                 ka.removeAllMessages(op.param2)
-                cl.sendText(msg.to,"Delete Chat")
+                cl.sendText(msg.to,"สำเร็จ..Delete Chat")
                 cl.sendText(msg.to,"Success...")
 #-----------------------------------------------------------
             elif "Spam @" in msg.text:
@@ -1483,42 +1517,42 @@ def bot(op):
                 for g in gs.members:
                     if _nametarget == g.displayName:
                        cl.sendText(msg.to,"Spam Start")
-                       ki.sendText(g.mid,"•─ ͜͡ᴛᴇᴀᴍ ᴛᴇsᴛ ʙᴏᴛ͜͡ ─•")
-                       kk.sendText(g.mid,"•─ ͜͡ᴛᴇᴀᴍ ᴛᴇsᴛ ʙᴏᴛ͜͡ ─•")
-                       ks.sendText(g.mid,"•─ ͜͡ᴛᴇᴀᴍ ᴛᴇsᴛ ʙᴏᴛ͜͡ ─•")
-                       kc.sendText(g.mid,"•─ ͜͡ᴛᴇᴀᴍ ᴛᴇsᴛ ʙᴏᴛ͜͡ ─•")
-                       ka.sendText(g.mid,"•─ ͜͡ᴛᴇᴀᴍ ᴛᴇsᴛ ʙᴏᴛ͜͡ ─•")
-                       cl.sendText(g.mid,"•─ ͜͡ᴛᴇᴀᴍ ᴛᴇsᴛ ʙᴏᴛ͜͡ ─•")
-                       ki.sendText(g.mid,"•─ ͜͡ᴛᴇᴀᴍ ᴛᴇsᴛ ʙᴏᴛ͜͡ ─•")
-                       kk.sendText(g.mid,"•─ ͜͡ᴛᴇᴀᴍ ᴛᴇsᴛ ʙᴏᴛ͜͡ ─•")
-                       ks.sendText(g.mid,"•─ ͜͡ᴛᴇᴀᴍ ᴛᴇsᴛ ʙᴏᴛ͜͡ ─•")
-                       kc.sendText(g.mid,"•─ ͜͡ᴛᴇᴀᴍ ᴛᴇsᴛ ʙᴏᴛ͜͡ ─•")
-                       ka.sendText(g.mid,"•─ ͜͡ᴛᴇᴀᴍ ᴛᴇsᴛ ʙᴏᴛ͜͡ ─•")
-                       cl.sendText(g.mid,"•─ ͜͡ᴛᴇᴀᴍ ᴛᴇsᴛ ʙᴏᴛ͜͡ ─•")
-                       ki.sendText(g.mid,"•─ ͜͡ᴛᴇᴀᴍ ᴛᴇsᴛ ʙᴏᴛ͜͡ ─•")
-                       kk.sendText(g.mid,"•─ ͜͡ᴛᴇᴀᴍ ᴛᴇsᴛ ʙᴏᴛ͜͡ ─•")
-                       ks.sendText(g.mid,"•─ ͜͡ᴛᴇᴀᴍ ᴛᴇsᴛ ʙᴏᴛ͜͡ ─•")
-                       kc.sendText(g.mid,"•─ ͜͡ᴛᴇᴀᴍ ᴛᴇsᴛ ʙᴏᴛ͜͡ ─•")
-                       ka.sendText(g.mid,"•─ ͜͡ᴛᴇᴀᴍ ᴛᴇsᴛ ʙᴏᴛ͜͡ ─•")
-                       cl.sendText(g.mid,"•─ ͜͡ᴛᴇᴀᴍ ᴛᴇsᴛ ʙᴏᴛ͜͡ ─•")
-                       ki.sendText(g.mid,"•─ ͜͡ᴛᴇᴀᴍ ᴛᴇsᴛ ʙᴏᴛ͜͡ ─•")
-                       kk.sendText(g.mid,"•─ ͜͡ᴛᴇᴀᴍ ᴛᴇsᴛ ʙᴏᴛ͜͡ ─•")
-                       ks.sendText(g.mid,"•─ ͜͡ᴛᴇᴀᴍ ᴛᴇsᴛ ʙᴏᴛ͜͡ ─•")
-                       kc.sendText(g.mid,"•─ ͜͡ᴛᴇᴀᴍ ᴛᴇsᴛ ʙᴏᴛ͜͡ ─•")
-                       ka.sendText(g.mid,"•─ ͜͡ᴛᴇᴀᴍ ᴛᴇsᴛ ʙᴏᴛ͜͡ ─•")
-                       cl.sendText(g.mid,"•─ ͜͡ᴛᴇᴀᴍ ᴛᴇsᴛ ʙᴏᴛ͜͡ ─•")
-                       ki.sendText(g.mid,"•─ ͜͡ᴛᴇᴀᴍ ᴛᴇsᴛ ʙᴏᴛ͜͡ ─•")
-                       kk.sendText(g.mid,"•─ ͜͡ᴛᴇᴀᴍ ᴛᴇsᴛ ʙᴏᴛ͜͡ ─•")
-                       ks.sendText(g.mid,"•─ ͜͡ᴛᴇᴀᴍ ᴛᴇsᴛ ʙᴏᴛ͜͡ ─•")
-                       kc.sendText(g.mid,"•─ ͜͡ᴛᴇᴀᴍ ᴛᴇsᴛ ʙᴏᴛ͜͡ ─•")
-                       ka.sendText(g.mid,"•─ ͜͡ᴛᴇᴀᴍ ᴛᴇsᴛ ʙᴏᴛ͜͡ ─•")
-                       cl.sendText(g.mid,"•─ ͜͡ᴛᴇᴀᴍ ᴛᴇsᴛ ʙᴏᴛ͜͡ ─•")
-                       ki.sendText(g.mid,"•─ ͜͡ᴛᴇᴀᴍ ᴛᴇsᴛ ʙᴏᴛ͜͡ ─•")
-                       kk.sendText(g.mid,"•─ ͜͡ᴛᴇᴀᴍ ᴛᴇsᴛ ʙᴏᴛ͜͡ ─•")
-                       ks.sendText(g.mid,"•─ ͜͡ᴛᴇᴀᴍ ᴛᴇsᴛ ʙᴏᴛ͜͡ ─•")
-                       kc.sendText(g.mid,"•─ ͜͡ᴛᴇᴀᴍ ᴛᴇsᴛ ʙᴏᴛ͜͡ ─•")
-                       ka.sendText(g.mid,"•─ ͜͡ᴛᴇᴀᴍ ᴛᴇsᴛ ʙᴏᴛ͜͡ ─•")
-                       ks.sendText(g.mid,"•─ ͜͡ᴛᴇᴀᴍ ᴛᴇsᴛ ʙᴏᴛ͜͡ ─•")
+                       ki.sendText(g.mid," (ѕєʟғвот[ᴍ̶̲̅ᴀ̶̲̅ɴ̶̲̅]κɪcκєʀ)")
+                       kk.sendText(g.mid," (ѕєʟғвот[ᴍ̶̲̅ᴀ̶̲̅ɴ̶̲̅]κɪcκєʀ)")
+                       ks.sendText(g.mid," (ѕєʟғвот[ᴍ̶̲̅ᴀ̶̲̅ɴ̶̲̅]κɪcκєʀ)")
+                       kc.sendText(g.mid," (ѕєʟғвот[ᴍ̶̲̅ᴀ̶̲̅ɴ̶̲̅]κɪcκєʀ)")
+                       ka.sendText(g.mid," (ѕєʟғвот[ᴍ̶̲̅ᴀ̶̲̅ɴ̶̲̅]κɪcκєʀ)")
+                       cl.sendText(g.mid," (ѕєʟғвот[ᴍ̶̲̅ᴀ̶̲̅ɴ̶̲̅]κɪcκєʀ)")
+                       ki.sendText(g.mid," (ѕєʟғвот[ᴍ̶̲̅ᴀ̶̲̅ɴ̶̲̅]κɪcκєʀ)")
+                       kk.sendText(g.mid," (ѕєʟғвот[ᴍ̶̲̅ᴀ̶̲̅ɴ̶̲̅]κɪcκєʀ)")
+                       ks.sendText(g.mid," (ѕєʟғвот[ᴍ̶̲̅ᴀ̶̲̅ɴ̶̲̅]κɪcκєʀ)")
+                       kc.sendText(g.mid," (ѕєʟғвот[ᴍ̶̲̅ᴀ̶̲̅ɴ̶̲̅]κɪcκєʀ)")
+                       ka.sendText(g.mid," (ѕєʟғвот[ᴍ̶̲̅ᴀ̶̲̅ɴ̶̲̅]κɪcκєʀ)")
+                       cl.sendText(g.mid," (ѕєʟғвот[ᴍ̶̲̅ᴀ̶̲̅ɴ̶̲̅]κɪcκєʀ)")
+                       ki.sendText(g.mid," (ѕєʟғвот[ᴍ̶̲̅ᴀ̶̲̅ɴ̶̲̅]κɪcκєʀ)")
+                       kk.sendText(g.mid," (ѕєʟғвот[ᴍ̶̲̅ᴀ̶̲̅ɴ̶̲̅]κɪcκєʀ)")
+                       ks.sendText(g.mid," (ѕєʟғвот[ᴍ̶̲̅ᴀ̶̲̅ɴ̶̲̅]κɪcκєʀ)")
+                       kc.sendText(g.mid," (ѕєʟғвот[ᴍ̶̲̅ᴀ̶̲̅ɴ̶̲̅]κɪcκєʀ)")
+                       ka.sendText(g.mid," (ѕєʟғвот[ᴍ̶̲̅ᴀ̶̲̅ɴ̶̲̅]κɪcκєʀ)")
+                       cl.sendText(g.mid," (ѕєʟғвот[ᴍ̶̲̅ᴀ̶̲̅ɴ̶̲̅]κɪcκєʀ)")
+                       ki.sendText(g.mid," (ѕєʟғвот[ᴍ̶̲̅ᴀ̶̲̅ɴ̶̲̅]κɪcκєʀ)")
+                       kk.sendText(g.mid," (ѕєʟғвот[ᴍ̶̲̅ᴀ̶̲̅ɴ̶̲̅]κɪcκєʀ)")
+                       ks.sendText(g.mid," (ѕєʟғвот[ᴍ̶̲̅ᴀ̶̲̅ɴ̶̲̅]κɪcκєʀ)")
+                       kc.sendText(g.mid," (ѕєʟғвот[ᴍ̶̲̅ᴀ̶̲̅ɴ̶̲̅]κɪcκєʀ)")
+                       ka.sendText(g.mid," (ѕєʟғвот[ᴍ̶̲̅ᴀ̶̲̅ɴ̶̲̅]κɪcκєʀ)")
+                       cl.sendText(g.mid," (ѕєʟғвот[ᴍ̶̲̅ᴀ̶̲̅ɴ̶̲̅]κɪcκєʀ)")
+                       ki.sendText(g.mid," (ѕєʟғвот[ᴍ̶̲̅ᴀ̶̲̅ɴ̶̲̅]κɪcκєʀ)")
+                       kk.sendText(g.mid," (ѕєʟғвот[ᴍ̶̲̅ᴀ̶̲̅ɴ̶̲̅]κɪcκєʀ)")
+                       ks.sendText(g.mid," (ѕєʟғвот[ᴍ̶̲̅ᴀ̶̲̅ɴ̶̲̅]κɪcκєʀ)")
+                       kc.sendText(g.mid," (ѕєʟғвот[ᴍ̶̲̅ᴀ̶̲̅ɴ̶̲̅]κɪcκєʀ)")
+                       ka.sendText(g.mid," (ѕєʟғвот[ᴍ̶̲̅ᴀ̶̲̅ɴ̶̲̅]κɪcκєʀ)")
+                       cl.sendText(g.mid," (ѕєʟғвот[ᴍ̶̲̅ᴀ̶̲̅ɴ̶̲̅]κɪcκєʀ)")
+                       ki.sendText(g.mid," (ѕєʟғвот[ᴍ̶̲̅ᴀ̶̲̅ɴ̶̲̅]κɪcκєʀ)")
+                       kk.sendText(g.mid," (ѕєʟғвот[ᴍ̶̲̅ᴀ̶̲̅ɴ̶̲̅]κɪcκєʀ)")
+                       ks.sendText(g.mid," (ѕєʟғвот[ᴍ̶̲̅ᴀ̶̲̅ɴ̶̲̅]κɪcκєʀ)")
+                       kc.sendText(g.mid," (ѕєʟғвот[ᴍ̶̲̅ᴀ̶̲̅ɴ̶̲̅]κɪcκєʀ)")
+                       ka.sendText(g.mid," (ѕєʟғвот[ᴍ̶̲̅ᴀ̶̲̅ɴ̶̲̅]κɪcκєʀ)")
+                       ks.sendText(g.mid," (ѕєʟғвот[ᴍ̶̲̅ᴀ̶̲̅ɴ̶̲̅]κɪcκєʀ)")
                        cl.sendText(msg.to, "Ok success")
                        print "Done spam" 
 #----------------------------------------------------------
@@ -1536,7 +1570,7 @@ def bot(op):
                         M.contentMetadata = {'mid': i}
                         cl.sendMessage(M)
 #----------------------------------------------------------
-            elif msg.text in ["Test"]:
+            elif msg.text in ["Test","จัดแถว"]:
                 ki.sendText(msg.to,"●")
                 ki.sendText(msg.to,"●●")
                 ki.sendText(msg.to,"●●●")
@@ -1561,8 +1595,74 @@ def bot(op):
                 kc.sendText(msg.to,"●●●●●●●●●●●●●●●●●●●●●●")
                 kc.sendText(msg.to,"●●●●●●●●●●●●●●●●●●●●●●●")
                 kc.sendText(msg.to,"●●●●●●●●●●●●●●●●●●●●●●●●")
-                ka.sendText(msg.to,"●●●●●●●●●●●●●●●●●●●●●●●●●")
-                ka.sendText(msg.to,"●●●●●●●●●●●●●●●●●●●●●●●●●●")
+                ka.sendText(msg.to,"●●●●●●●●●●●●●●●●●●●●●●●●")
+                ka.sendText(msg.to,"●●●●●●●●●●●●●●●●●●●●●●●")
+		ks.sendText(msg.to,"●●●●●●●●●●●●●●●●●●●●●●")
+                ks.sendText(msg.to,"●●●●●●●●●●●●●●●●●●●●●")
+                ks.sendText(msg.to,"●●●●●●●●●●●●●●●●●●●●")
+                ks.sendText(msg.to,"●●●●●●●●●●●●●●●●●●●")
+                kc.sendText(msg.to,"●●●●●●●●●●●●●●●●●●")
+                kc.sendText(msg.to,"●●●●●●●●●●●●●●●●●")
+                kc.sendText(msg.to,"●●●●●●●●●●●●●●●●")
+                kc.sendText(msg.to,"●●●●●●●●●●●●●●●")
+                kc.sendText(msg.to,"●●●●●●●●●●●●●●")
+                kc.sendText(msg.to,"●●●●●●●●●●●●●")
+                ka.sendText(msg.to,"●●●●●●●●●●●●")
+                ka.sendText(msg.to,"●●●●●●●●●●●")
+		kk.sendText(msg.to,"●●●●●●●●●●")
+		kc.sendText(msg.to,"●●●●●●●●●")
+                ka.sendText(msg.to,"●●●●●●●●")
+                ka.sendText(msg.to,"●●●●●●●")
+		kk.sendText(msg.to,"●●●●●●")
+		kc.sendText(msg.to,"●●●●●")
+                ka.sendText(msg.to,"●●●●")
+                ka.sendText(msg.to,"●●●")
+		kk.sendText(msg.to,"●●")
+                kk.sendText(msg.to,"●●●")
+                kk.sendText(msg.to,"●●●●")
+                ks.sendText(msg.to,"●●●●●")
+                ks.sendText(msg.to,"●●●●●●")
+		kk.sendText(msg.to,"●●●●●●●")
+                kk.sendText(msg.to,"●●●●●●●●")
+                ks.sendText(msg.to,"●●●●●●●●●")
+                ks.sendText(msg.to,"●●●●●●●●●●")
+                kk.sendText(msg.to,"●●●●●●●●●●●")
+                kk.sendText(msg.to,"●●●●●●●●●●●●")
+                ks.sendText(msg.to,"●●●●●●●●●●●●●")
+                ks.sendText(msg.to,"●●●●●●●●●●●●●●")
+                ks.sendText(msg.to,"●●●●●●●●●●●●●●●")
+                ks.sendText(msg.to,"●●●●●●●●●●●●●●●●")
+                ks.sendText(msg.to,"●●●●●●●●●●●●●●●●●")
+                ks.sendText(msg.to,"●●●●●●●●●●●●●●●●●●")
+                kc.sendText(msg.to,"●●●●●●●●●●●●●●●●●●●")
+                kc.sendText(msg.to,"●●●●●●●●●●●●●●●●●●●●")
+                kc.sendText(msg.to,"●●●●●●●●●●●●●●●●●●●●●")
+                kc.sendText(msg.to,"●●●●●●●●●●●●●●●●●●●●●●")
+                kc.sendText(msg.to,"●●●●●●●●●●●●●●●●●●●●●●●")
+                kc.sendText(msg.to,"●●●●●●●●●●●●●●●●●●●●●●●●")
+                ka.sendText(msg.to,"●●●●●●●●●●●●●●●●●●●●●●●●")
+                ka.sendText(msg.to,"●●●●●●●●●●●●●●●●●●●●●●●")
+		ks.sendText(msg.to,"●●●●●●●●●●●●●●●●●●●●●●")
+                ks.sendText(msg.to,"●●●●●●●●●●●●●●●●●●●●●")
+                ks.sendText(msg.to,"●●●●●●●●●●●●●●●●●●●●")
+                ks.sendText(msg.to,"●●●●●●●●●●●●●●●●●●●")
+                kc.sendText(msg.to,"●●●●●●●●●●●●●●●●●●")
+                kc.sendText(msg.to,"●●●●●●●●●●●●●●●●●")
+                kc.sendText(msg.to,"●●●●●●●●●●●●●●●●")
+                kc.sendText(msg.to,"●●●●●●●●●●●●●●●")
+                kc.sendText(msg.to,"●●●●●●●●●●●●●●")
+                kc.sendText(msg.to,"●●●●●●●●●●●●●")
+                ka.sendText(msg.to,"●●●●●●●●●●●●")
+                ka.sendText(msg.to,"●●●●●●●●●●●")
+		ks.sendText(msg.to,"●●●●●●●●●●")
+                kk.sendText(msg.to,"●●●●●●●●●")
+                kk.sendText(msg.to,"●●●●●●●●")
+                ks.sendText(msg.to,"●●●●●●●")
+                ks.sendText(msg.to,"●●●●●●")
+		ks.sendText(msg.to,"●●●●●")
+                ks.sendText(msg.to,"●●●●")
+                kk.sendText(msg.to,"●●●")
+                kk.sendText(msg.to,"●●")
                 ka.sendText(msg.to,"●Bot Working●")
                 cl.sendText(msg.to,"●( ^^)人(^^ )●")
 #----------------------------------------------------------
