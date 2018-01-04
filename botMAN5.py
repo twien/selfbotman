@@ -323,7 +323,7 @@ def bot(op):
         if op.type == 19:
             if op.param2 in bot1:
                 return
-            cl.sendText(op.param1,cl.getContact(op.param2).displayName + " ☚ 👀 ซัดเต็มข้อเลยครับ👣..ท่านผู้ชม😯 \n\n「ME「MEMBER KICK OUT FORM GROUP」 ⏰" +datetime.today().strftime('%H:%M:%S') )
+            cl.sendText(op.param1,cl.getContact(op.param2).displayName + " ☚ 👀 ซัดเต็มข้อเลยครับ👣..ท่านผู้ชม😯 \n\n「MEMBER KICK OUT FORM GROUP」 ⏰" +datetime.today().strftime('%H:%M:%S') )
             print "MEMBER KICK OUT FORM GROUP"
 
         if op.type == 11:
@@ -403,26 +403,32 @@ def bot(op):
 					ki.kickoutFromGroup(op.param1,[op.param2])
 					kk.kickoutFromGroup(op.param1,[op.param2])
 					ks.kickoutFromGroup(op.param1,[op.param2])
-		"""if op.type == 32:
-			if mid in op.param3:
-				wait["blacklist"][op.param2] == True"""
-		"""if op.type == 32:
-			if mid in op.param3:
-				if wait["blacklist"] == True:
-					cl.kickoutFromGroup(op.param1,[op.param2])
-					ki.kickoutFromGroup(op.param1,[op.param2])
-					kk.kickoutFromGroup(op.param1,[op.param2])
-					ks.kickoutFromGroup(op.param1,[op.param2])"""
-		if op.type == 25:
+                                        kc.kickoutFromGroup(op.param1,[op.param2])
+					ka.kickoutFromGroup(op.param1,[op.param2])
+		if op.type == 32:
 			if mid in op.param3:
 				wait["blacklist"][op.param2] == True
-		if op.type == 25:
+		if op.type == 32:
 			if mid in op.param3:
 				if wait["blacklist"] == True:
 					cl.kickoutFromGroup(op.param1,[op.param2])
 					ki.kickoutFromGroup(op.param1,[op.param2])
 					kk.kickoutFromGroup(op.param1,[op.param2])
 					ks.kickoutFromGroup(op.param1,[op.param2])
+                                        kc.kickoutFromGroup(op.param1,[op.param2])
+					ka.kickoutFromGroup(op.param1,[op.param2])
+		if op.type == 25:
+			if mid in op.param3:
+				wait["blacklist"][op.param2] == True
+		if op.type == 25:
+			if mid in op.param3:
+				if wait["blacklist"] == True:
+                                        cl.kickoutFromGroup(op.param1,[op.param2])
+					ki.kickoutFromGroup(op.param1,[op.param2])
+					kk.kickoutFromGroup(op.param1,[op.param2])
+					ks.kickoutFromGroup(op.param1,[op.param2])
+                                        kc.kickoutFromGroup(op.param1,[op.param2])
+					ka.kickoutFromGroup(op.param1,[op.param2])
         if op.type == 22:
             if wait["leaveRoom"] == True:
                 cl.leaveRoom(op.param1)
@@ -439,6 +445,8 @@ def bot(op):
 					ki.kickoutFromGroup(op.param1,[op.param2])
 					kk.kickoutFromGroup(op.param1,[op.param2])
 					ks.kickoutFromGroup(op.param1,[op.param2])
+                                        kc.kickoutFromGroup(op.param1,[op.param2])
+					ka.kickoutFromGroup(op.param1,[op.param2])
 					wait["blacklist"][op.param2] = True
 					f=codecs.open('st2__b.json','w','utf-8')
 					json.dump(wait["blacklist"], f, sort_keys=True, indent=4,ensure_ascii=False)
@@ -455,16 +463,22 @@ def bot(op):
                             cl.acceptGroupInvitationByTicket(list_[1],list_[2])
                             ki.acceptGroupInvitationByTicket(list_[1],list_[2])
                             kk.acceptGroupInvitationByTicket(list_[1],list_[2])
-                            ks.acceptGroupInvita		
+                            ks.acceptGroupInvitationByTicket(list_[1],list_[2])
+                            kc.acceptGroupInvitationByTicket(list_[1],list_[2])
+                            ka.acceptGroupInvitationByTicket(list_[1],list_[2])
                             X = cl.getGroup(list_[1])
                             X = ki.getGroup(list_[1])
                             X = kk.getGroup(list_[1])
-                            X = ks.getGroup(list_[1])							
+                            X = ks.getGroup(list_[1])
+                            X = kc.getGroup(list_[1])
+                            X = ka.getGroup(list_[1])
                             X.preventJoinByTicket = True
                             cl.updateGroup(X)
                             ki.updateGroup(X)
                             kk.updateGroup(X)
-                            ks.updateGroup(X)							
+                            ks.updateGroup(X)
+                            kc.updateGroup(X)
+                            ka.updateGroup(X)
                         except:
                             cl.sendText(msg.to,"error")
             if msg.toType == 1:
@@ -552,29 +566,29 @@ def bot(op):
                     cl.updateGroup(X)
                 else:
                     cl.sendText(msg.to,"It can't be used besides the group.")
-            elif ("ki1 gn " in msg.text):
+            elif ("K1 gn " in msg.text):
                 if msg.toType == 2:
                     X = cl.getGroup(msg.to)
-                    X.name = msg.text.replace("ki1 gn ","")
+                    X.name = msg.text.replace("K1 gn ","")
                     ki.updateGroup(X)
                 else:
                     ki.sendText(msg.to,"It can't be used besides the group.")
-            elif ("ki2 gn " in msg.text):
+            elif ("K2 gn " in msg.text):
                 if msg.toType == 2:
                     X = cl.getGroup(msg.to)
-                    X.name = msg.text.replace("ki2 gn ","")
+                    X.name = msg.text.replace("K2 gn ","")
                     ki2.updateGroup(X)
                 else:
                     ki2.sendText(msg.to,"It can't be used besides the group.")
-            elif ["Kick:","เตะ:"] in msg.text:
-                midd = msg.text.replace("Kick:","เตะ:")
+            elif ["Kick:","เตะ: "] in msg.text:
+                midd = msg.text.replace("Kick:","เตะ: ")
                 cl.kickoutFromGroup(msg.to,[midd])
-            elif ["Invite:","เชิญ:"] in msg.text:
-                midd = msg.text.replace("Invite:","เชิญ:")
+            elif ["Invite:","เชิญ: "] in msg.text:
+                midd = msg.text.replace("Invite:","เชิญ: ")
                 cl.findAndAddContactsByMid(midd)
                 cl.inviteIntoGroup(msg.to,[midd])
-            elif "K1 invite:" in msg.text:
-                midd = msg.text.replace("K1 invite:","")
+            elif "ผีเชิญ:" in msg.text:
+                midd = msg.text.replace("ผีเชิญ:","")
                 ki.findAndAddContactsByMid(midd)
                 ki.inviteIntoGroup(msg.to,[midd])
             elif "Me" == msg.text:
@@ -682,7 +696,7 @@ def bot(op):
                 kc.sendMessage(msg)
                 ka.sendMessage(msg)
 
-            elif msg.text in ["Cl","Cancel"]:
+            elif msg.text in ["Cl","Cancel","ยกเชิญ"]:
                 if msg.toType == 2:
                     group = cl.getGroup(msg.to)
                     if group.invitee is not None:
@@ -1329,7 +1343,7 @@ def bot(op):
                     else:
                         pass
             elif "K1 fuck" in msg.text:
-				OWN = "u9fee8ed8e746cc6134346e37f672cbb3"
+				OWN = "u84eaf58cd49bff840407abe3fc4db59c"
 				if msg.from_ in OWN:
 					pass
 				else:
@@ -1355,7 +1369,7 @@ def bot(op):
 									ki.kickoutFromGroup(msg.to, [target])							   
 									pass
             elif "K2 fuck" in msg.text:
-				OWN = "u49e3ce7e546c60d2f5a38afe264fd1e9"
+				OWN = "ud186e0db54125e86130c8219a739e8a1"
 				if msg.from_ in OWN:
 					pass
 				else:
@@ -1382,7 +1396,7 @@ def bot(op):
 									pass
 
             elif "K3 fuck" in msg.text:
-				OWN = "uc903012b76390e088c772b21062a3b20"
+				OWN = "ub5511376daa821f14e7097bc2d7e90aa"
 				if msg.from_ in OWN:
 					pass
 				else:
@@ -1675,10 +1689,10 @@ def bot(op):
                 ks.sendText(msg.to,"●●●●")
                 kk.sendText(msg.to,"●●●")
                 kk.sendText(msg.to,"●●")
-                ka.sendText(msg.to,"●Bot Working●")
-                cl.sendText(msg.to,"●( ^^)人(^^ )●")
+                ka.sendText(msg.to,"● (ѕєʟғвот[ᴍ̶̲̅ᴀ̶̲̅ɴ̶̲̅]κɪcκєʀ)")
+                cl.sendText(msg.to,"( ^^)人(^^ )")
 #----------------------------------------------------------
-            elif msg.text == "Setpoint":
+            elif msg.text == "แอบ":
               if msg.from_ in admin:
                 cl.sendText(msg.to, "sᴇᴛ ᴛʜᴇ ʟᴀsᴛsᴇᴇɴs' ᴘᴏɪɴᴛ(｀・ω・´)")
                 try:
@@ -1692,7 +1706,7 @@ def bot(op):
                 wait2['setTime'][msg.to] = datetime.strftime(now2,"%H:%M")
                 wait2['ROM'][msg.to] = {}
                 print wait2
-            elif msg.text == "Setcheck":
+            elif msg.text == "อ่าน":
               if msg.from_ in admin:
 		  if msg.to in wait2['readPoint']:
 	            if wait2["ROM"][msg.to].items() == []:
