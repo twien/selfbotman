@@ -50,8 +50,8 @@ helpMessage ="""Mr. Bots…⛿
 ╠❂➣[ID]   (ѕєʟғвот[ᴍ̶̲̅ᴀ̶̲̅ɴ̶̲̅]κɪcκєʀ)
 ╠❂➣[Ginfo]:  •ใอดี:กลุ่ม:ผุ้สร้าง
 ╠❂➣[Mid]  •MID ผู้ควบคุมบอท
-╠❂➣[Me]  •Send contact Me
-╠❂➣[You @] •Send contact @tag
+╠❂➣[Me]  •Send contact ME
+╠❂➣[You @] •Send contact YOU
 ╠❂➣[Mention] •แท๊กสมาชิก ทั้งกลุ่ม
 ╠❂➣[Man @tag]  •แท๊กสมาชิก ทั้งกลุ่ม
 ╠❂➣[Message add: ] Set messageADD
@@ -93,7 +93,8 @@ helpMessage ="""Mr. Bots…⛿
 ╠═════════════════════
 ║[C̶̲̅ᴏ̶̲̅ᴍ̶̲̅ᴍ̶̲̅ᴀ̶̲̅ɴ̶̲̅ᴅ̶̲̅] ☛κɪcκєʀ☠️Bot ᴸᶤᶰᵉ☚
 ╠═════════════════════
-╠❂➣[Spam virus @]บอทปล่อยไวรัส
+╠❂➣[Spam @] คิกเกอร์สแปมแชท
+╠❂➣[Test],[จัดแถว] 😁😅😆
 ╠❂➣[Delete chat] •ล้างแชทบอท
 ╠❂➣[Mybot] •Send contact BOT
 ╠❂➣[Sendcontact]•ContactBOT&ME
@@ -125,10 +126,10 @@ helpMessage2 ="""──────┅═ই۝ई═┅──────
 http://line.me/ti/p/~1ove..neverdie
 ──────┅═ই۝ई═┅──────
 ╔═══════════════════════
-║❂➣[PROTECT: ON/OFF]:
-║❂➣[BLOCK URL: ON/OFF]:
-║❂➣[NAMELOCK: ON/OFF]:
-║❂➣[BLOCKINVITE: ON/OFF]:
+║❂➣[PROTECT: ON/OFF] ระบบป้องกัน
+║❂➣[BLOCK URL: ON/OFF] ล็อกลิงก์
+║❂➣[NAMELOCK: ON/OFF] ล็อกชื่อกลุ่ม
+║❂➣[BLOCKINVITE: ON/OFF]ล็อกเชิญ
 ╚═══════════════════════
 """
 KAC = [cl,ki,kk,ks,kc,ka]
