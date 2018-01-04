@@ -9,27 +9,27 @@ import re,string,os
 import os.path,sys,urllib,shutil,subprocess,pickle
 
 cl = LINETCR.LINE()
-cl.login(token="EnVJbn0vWGuARiS48OO3.JIryx4z3ry1IZHDp9TRmGW.y1nwwxkTv4YJPLvoov2skupIP2I3tooIyAwyAQc5SUA=")
+cl.login(token="ช่องใส่โทเค็น")
 cl.loginResult()
 
 ki = LINETCR.LINE()
-ki.login(token="Enpg8hS0Ah3vyFThcBx3.N/6o2oDgZge0ng439NllSW.dCoo/CjpD7uPxm8mtfnhCaLY6kDwNlZSrPJUcOC0pUc=")
+ki.login(token="ช่องใส่โทเค็น")
 ki.loginResult()
 
 kk = LINETCR.LINE()
-kk.login(token="EnsJCEp0EgkVvpvVMCz9.sEpoFLrSynl1O4R/jK+r6q.wzV0eIpoON/x8V0YkXdNqZZ2AO01mygimZFaQ9Hl+BQ=")
+kk.login(token="ช่องใส่โทเค็น")
 kk.loginResult()
 
 ks = LINETCR.LINE()
-ks.login(token="EnWhLWgvdNynPTN5vik0.Yqmbk3y5dGImDYSHbIO7ia.REJoe1ZpJhjnnXv4ngv+OtwUYLQN8V74Eunu68w3pso=")
+ks.login(token="ช่องใส่โทเค็น")
 ks.loginResult()
 
 kc = LINETCR.LINE()
-kc.login(token="EnIgWxtXGrEI9HL1YlK0.qTqJ/tcbW+c9xovbLqJnya.ePqI9MqhNoD269G3YQhdfEBLviySA5jaPrD0QKriwjM=")
+kc.login(token="ช่องใส่โทเค็น")
 kc.loginResult()
 
 ka = LINETCR.LINE()
-ka.login(token="En2t3H7lc1iZM6YYKkpb.brg8qqR4cXfYLtnKj4/hgW.Hc4H5HWXrgiRoBVtm1SsVhkW62afIKjNlW63zUgliqA=")
+ka.login(token="ช่องใส่โทเค็น")
 ka.loginResult()
 
 with open('profileSave.pkl') as f:
@@ -38,9 +38,11 @@ with open('profileSave.pkl') as f:
 print "login success"
 reload(sys)
 sys.setdefaultencoding('utf-8')
-helpMessage ="""☬̫̫A̫̫R̫̫T̫̫H̫̫U̫̫R̫̫☬̫ SELF BOT
-─┅═✥ᵀᴴᴬᴵᴸᴬᴺᴰ✥═┅─
-    [ᴛᴇᴀᴍ ᴛᴇ̲̅s̲̅ᴛ ʙᴏᴛ]
+helpMessage ="""──────┅═ই۝ई═┅──────
+             ✯✯❇Thailand❇✯✯
+      ✯❇͜͡C͜͡r͜͡e͜͡a͜͡t͜͡o͜͡r✯͜͡$͜͡ë͜͡I͜͡F͜͡-͜͡฿͜͡o͜͡Ŧ❇✯
+http://line.me/ti/p/~1ove..neverdie
+──────┅═ই۝ई═┅──────
 ╔══════════════════
 ║❂➣[Id]
 ║❂➣[Mid]
@@ -119,7 +121,11 @@ helpMessage ="""☬̫̫A̫̫R̫̫T̫̫H̫̫U̫̫R̫̫☬̫ SELF BOT
 ║line.me/ti/p/~art-bot-cyber01
 ╚══════════════════
 """
-helpMessage2 ="""•─ ͜͡ᴛᴇᴀᴍ ᴛᴇsᴛ ʙᴏᴛ͜͡ ─•
+helpMessage2 ="""──────┅═ই۝ई═┅──────
+             ✯✯❇Thailand❇✯✯
+      ✯❇͜͡C͜͡r͜͡e͜͡a͜͡t͜͡o͜͡r✯͜͡$͜͡ë͜͡I͜͡F͜͡-͜͡฿͜͡o͜͡Ŧ❇✯
+http://line.me/ti/p/~1ove..neverdie
+──────┅═ই۝ई═┅──────
 ╔═══════════════════════
 ║❂➣[PROTECT: ON/OFF]:
 ║❂➣[BLOCK URL: ON/OFF]:
@@ -166,14 +172,7 @@ wait = {
     'leaveRoom':True,
     'timeline':True,
     'autoAdd':True,
-    'message':"""                 ღ¸.✻´`✻.¸¸ღ
-     ╔════♪•●♥●•♪════╗
-         ♝●❉•ARTHUR•❉●♝
-            ∮.♪•Self★Bot•♪.∮
-                 Add For me
-line.me/ti/p/~art-bot-cyber01
-     ╚════♪•●♥●•♪════╝
-Thank For Add Me
+    'message':"""
 """,
     "lang":"JP",
     "comment":"Auto like By.http://line.me/ti/p/~art-bot-cyber01☬",
